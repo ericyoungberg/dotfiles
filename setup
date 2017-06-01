@@ -1,0 +1,34 @@
+#!/usr/bin/python
+
+# Reads the directory structure of the .dotfiles folder then
+# creates symbolic links from the .dotfiles directory into 
+# the user's home directory.
+
+import os
+
+blacklist = ['./setup']
+
+root_dir = '.'
+home_dir = os.environ['HOME']
+
+for current_dir, subdirs, files in os.walk(root_dir, topdown=False):
+    for file in files:
+        file_path = os.path.join(current_dir, file)
+
+        if not file_path in blacklist:
+
+            destination_dir = os.path.join(home_dir, current_dir[2:])
+            destination = os.path.join(destination_dir, file)
+
+            # Make sure that we haven't already linked this file in a 
+            # previous setup.
+            if not os.path.islink(destination):
+                if os.path.isfile(destination):
+                    os.rename(destination, destination + '.bak')
+                else:
+                    os.makedirs(destination_dir, exist_ok=True)
+
+                os.symlink(os.path.abspath(file_path), destination)
+
+            else:
+                print(u'\u2713' + " Already linked {0}...".format(file_path))
