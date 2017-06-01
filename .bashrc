@@ -13,6 +13,8 @@ alias la='ls -lah --color=auto'
 
 alias scoop='git add -A && git status --short'
 
+alias shutdown="sudo shutdown -P now"
+
 
 # Settings
 # ===============================================
