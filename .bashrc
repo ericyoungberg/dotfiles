@@ -21,8 +21,10 @@ export TERM=xterm-256color
 export PS1="\[\e[1;36m\][\h] \[\033[01;32m\]\u\[\033[01;34m\] \W \$\[\033[00m\] "
 
 
-# Languages
+# Environments
 # ===============================================
+
+source ~/.git-completion.bash
 
 export NVM_DIR="/home/eric/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
