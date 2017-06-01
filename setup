@@ -14,7 +14,7 @@ home_dir = os.environ['HOME']
 for current_dir, sub_dirs, files in os.walk(root_dir):
 
     # Remove any unwanted directories from our walk
-    sub_dirs = [sub_dir for sub_dir in sub_dirs if sub_dir not in blacklist]
+    sub_dirs[:] = [sub_dir for sub_dir in sub_dirs if os.path.join(current_dir, sub_dir) not in blacklist]
 
     for file in files:
         file_path = os.path.join(current_dir, file)
