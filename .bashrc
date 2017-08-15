@@ -8,10 +8,12 @@
 
 # Aliases
 # ===============================================
-alias ls='ls --color=auto'
-alias la='ls -lah --color=auto'
+alias ls='ls'
+alias la='ls -lah'
 
 alias scoop='git add -A && git status --short'
+
+alias tmuxl='tmux list-sessions'
 
 alias shutdown="sudo shutdown -P now"
 
@@ -28,6 +30,10 @@ export PS1="\[\e[1;36m\][\h] \[\033[01;32m\]\u\[\033[01;34m\] \W \$\[\033[00m\] 
 
 source ~/.git-completion.bash
 
-export NVM_DIR="/home/eric/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-nvm use 7.10.0
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
