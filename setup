@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Reads the directory structure of the .dotfiles folder then
 # creates symbolic links from the .dotfiles directory into 
