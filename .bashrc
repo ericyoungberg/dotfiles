@@ -14,6 +14,7 @@ alias la='ls -lah'
 alias scoop='git add -A && git status --short'
 
 alias tmuxl='tmux list-sessions'
+alias tmuxd='tmux kill-session -t'
 
 alias shutdown="sudo shutdown -P now"
 
