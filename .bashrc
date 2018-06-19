@@ -12,11 +12,10 @@ alias ls='ls'
 alias la='ls -lah'
 
 alias scoop='git add -A && git status --short'
+alias grog='git log --oneline | head -5'
 
 alias tmuxl='tmux list-sessions'
 alias tmuxd='tmux kill-session -t'
-
-alias shutdown="sudo shutdown -P now"
 
 
 # Settings
@@ -30,9 +29,11 @@ export PS1="\[\e[1;36m\][\h] \[\033[01;32m\]\u\[\033[01;34m\] \W \$\[\033[00m\] 
 # ===============================================
 
 source ~/.git-completion.bash
+source ~/.wtf/.env
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# Add Go installed binaries to PATH
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$GOPATH/bin
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
