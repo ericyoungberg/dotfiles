@@ -1,0 +1,99 @@
+wtf:
+  colors:
+    background: black
+    border:
+      focusable: blue
+      focused: lightblue
+      normal: blue
+  grid:
+    columns: [37, 35, 45]
+    rows: [10, 10, 8, 17]
+  refreshInterval: 1
+  term: "xterm-256color"
+  mods:
+    power: 
+      enabled: true
+      position:
+        top: 0
+        left: 0
+        height: 1
+        width: 1
+      refreshInterval: 15
+    ipinfo:
+      enabled: true
+      position:
+        top: 0
+        left: 2
+        height: 1
+        width: 1
+      refreshInterval: 150
+      colors:
+        name: blue
+        value: lightblue
+    git:
+      enabled: true
+      position:
+        top: 3
+        left: 0
+        height: 1
+        width: 3
+      refreshInterval: 2
+      commitCount: 4
+      repositories:
+        - "/Users/eyoungberg/Projects/mapc/massbuilds"
+        - "/Users/eyoungberg/Projects/mapc/datacommon"
+        - "/Users/eyoungberg/Projects/mapc/metro-mayors-housing-task-force"
+    github:
+      enabled: true
+      position:
+        top: 1
+        left: 1
+        height: 2
+        width: 2
+      refreshInterval: 300
+      repositories:
+        massbuilds: "MAPC"
+        prql: "PrQL"
+      username: "ericyoungberg"
+    weather:
+      enabled: true
+      refreshInterval: 900
+      position:
+        top: 1
+        left: 0
+        height: 1
+        width: 1
+      tempUnit: "F"
+      language: "EN"
+      cityids:
+        - 4930956
+        - 4887398
+      colors:
+        current: blue
+    clocks:
+      enabled: true
+      position:
+        top: 2
+        left: 0
+        height: 1
+        width: 1
+      colors:
+        rows:
+          even: "blue"
+          odd: "white"
+      locations:
+        Boston: "America/New_York"
+        Beijing: "Asia/Hong_Kong"
+        Chicago: "America/Chicago"
+        Paris: "Europe/Paris"
+        Vancouver: "America/Vancouver"
+      refreshInterval: 15
+      sort: "chronological"
+    security:
+      enabled: true
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 3600
