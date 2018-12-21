@@ -29,7 +29,9 @@ export PS1="\[\e[1;36m\][\h] \[\033[01;32m\]\u\[\033[01;34m\] \W \$\[\033[00m\] 
 # ===============================================
 
 source ~/.git-completion.bash
-source ~/.wtf/.env
+[[ -s "$HOME/.wtf/.env" ]] && source ~/.wtf/.env
+
+export PATH=$PATH:/usr/local/sbin
 
 # Add Go to PATH
 export GOPATH=$HOME/go
@@ -38,9 +40,7 @@ export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Add Yarn global binaries
-
 export PATH="$PATH:$HOME/.yarn/bin"

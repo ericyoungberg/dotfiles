@@ -40,9 +40,9 @@ wtf:
       refreshInterval: 2
       commitCount: 4
       repositories:
-        - "/Users/eyoungberg/Projects/mapc/massbuilds"
+        - "/Users/eyoungberg/Projects/mapc/lead-dashboard"
+        - "/Users/eyoungberg/Projects/mapc/lead-estimator"
         - "/Users/eyoungberg/Projects/mapc/datacommon"
-        - "/Users/eyoungberg/Projects/mapc/metro-mayors-housing-task-force"
     github:
       enabled: true
       position:
@@ -52,7 +52,9 @@ wtf:
         width: 2
       refreshInterval: 300
       repositories:
-        massbuilds: "MAPC"
+        digitalhub: "MAPC"
+        datacommon: "MAPC"
+        databrowser: "MAPC"
         prql: "PrQL"
       username: "ericyoungberg"
     weather:
