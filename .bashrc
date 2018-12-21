@@ -55,3 +55,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # shellcheck source=/dev/null
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Add Yarn global binaries
+export PATH="$PATH:$HOME/.yarn/bin"

@@ -6,7 +6,7 @@
 
 import os
 
-blacklist = ['./setup', './.git']
+blacklist = ['./setup', './.git', './images']
 
 root_dir = '.'
 home_dir = os.environ['HOME']
