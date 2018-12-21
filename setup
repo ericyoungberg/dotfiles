@@ -6,7 +6,12 @@
 
 import os
 
-blacklist = ['./setup', './.git', './images']
+blacklist = [
+  './setup', 
+  './.git', 
+  './images',
+  './slack-theme.zip',
+]
 
 root_dir = '.'
 home_dir = os.environ['HOME']
