@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+q kill
@@ -172,18 +172,27 @@ bar {
 # Design
 ##
 
-gaps outer 12
-gaps inner 12
+set $c_border #C22323
+set $c_border_dark #841028
+set $gaps 12
 
-default_border none
+gaps outer $gaps
+gaps inner $gaps
+
+default_border pixel 2
+client.focused $c_border_dark $c_border_dark $c_border_dark $c_border_dark $c_border_dark
+client.focused_inactive $c_border $c_border $c_border $c_border $c_border
+client.unfocused $c_border $c_border $c_border $c_border $c_border
+client.urgent $c_border $c_border $c_border $c_border $c_border
+client.placeholder $c_border $c_border $c_border $c_border $c_border
 
 
 # Applications
 assign [class="Firefox"] $workspace2
-assign [class="Gnome-terminal"] $workspace3
+assign [class="URxvt"] $workspace3
 
 exec_always ~/.fehbg
 
 exec firefox
-exec gnome-terminal
-exec compton
+exec --no-startup-id urxvt
+exec --no-startup-id compton
