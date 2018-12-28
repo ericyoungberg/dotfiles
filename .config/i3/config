@@ -196,4 +196,4 @@ exec_always --no-startup-id ~/.fehbg
 
 exec firefox
 exec --no-startup-id urxvt
-exec --no-startup-id compton -b
+exec --no-startup-id compton

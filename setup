@@ -10,7 +10,7 @@ blacklist = [
   './setup', 
   './.git', 
   './images',
-  './slack-theme.zip',
+  './slack-theme',
 ]
 
 root_dir = '.'
