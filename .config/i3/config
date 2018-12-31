@@ -152,7 +152,7 @@ set $transparent   #00000000
 set $white         #FF3D23
 set $darkwhite     #FF7D53
 
-set $gaps 2
+set $gaps 5
 
 gaps outer $gaps
 gaps inner $gaps
