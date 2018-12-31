@@ -36,6 +36,8 @@ alias resnet="sudo systemctl restart network-manager"
 export TERM=xterm-256color
 export PS1="\\[\\e[1;36m\\][\\h] \\[\\033[01;32m\\]\\u\\[\\033[01;34m\\] \\W \$\\[\\033[00m\\] "
 
+xset r rate 160 25
+
 
 # Environments
 # ===============================================
