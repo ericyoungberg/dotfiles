@@ -26,6 +26,9 @@ alias tmuxl='tmux list-sessions'
 alias tmuxd='tmux kill-session -t'
 alias tmuxr='tmux rename-session -t'
 
+# Settle network issues
+alias resnet="sudo systemctl restart network-manager"
+
 
 # Settings
 # ===============================================
