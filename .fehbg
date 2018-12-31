@@ -1,2 +1,2 @@
 #!/bin/sh
-'feh' '--bg-scale' '/home/eyoungberg/.dotfiles/images/grid.png' 
+'feh' '--bg-fill' '/home/eyoungberg/.dotfiles/images/grad.png' 
