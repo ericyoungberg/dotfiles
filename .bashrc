@@ -52,7 +52,7 @@ export PATH=$PATH:/usr/local/sbin
 
 # Add Go to PATH
 export GOPATH=$HOME/go
-export GOROOT=/usr/local/go
+export GOROOT=/usr/lib/go
 export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
