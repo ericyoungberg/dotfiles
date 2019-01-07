@@ -38,6 +38,9 @@ export PS1="\\[\\e[1;36m\\][\\h] \\[\\033[01;32m\\]\\u\\[\\033[01;34m\\] \\W \$\
 
 xset r rate 160 25
 
+# shellcheck source=/dev/null
+[[ -s "$HOME/.screenlayout/layout" ]] && source "$HOME/.screenlayout/layout"
+
 
 # Environments
 # ===============================================
