@@ -6,24 +6,16 @@ wtf:
       focused: lightblue
       normal: blue
   grid:
-    columns: [37, 35, 45]
-    rows: [10, 10, 8, 17]
+    columns: [40]
+    rows: [10, 10, 8, 17, 25]
   refreshInterval: 1
   term: "xterm-256color"
   mods:
-    power: 
-      enabled: true
-      position:
-        top: 0
-        left: 0
-        height: 1
-        width: 1
-      refreshInterval: 15
     ipinfo:
       enabled: true
       position:
-        top: 0
-        left: 2
+        top: 2
+        left: 0
         height: 1
         width: 1
       refreshInterval: 150
@@ -33,10 +25,10 @@ wtf:
     git:
       enabled: true
       position:
-        top: 3
+        top: 5
         left: 0
         height: 1
-        width: 3
+        width: 1
       refreshInterval: 2
       commitCount: 4
       repositories:
@@ -46,10 +38,10 @@ wtf:
     github:
       enabled: true
       position:
-        top: 1
-        left: 1
-        height: 2
-        width: 2
+        top: 4
+        left: 0
+        height: 1
+        width: 1
       refreshInterval: 300
       repositories:
         digitalhub: "MAPC"
@@ -61,7 +53,7 @@ wtf:
       enabled: true
       refreshInterval: 900
       position:
-        top: 1
+        top: 0
         left: 0
         height: 1
         width: 1
@@ -75,7 +67,7 @@ wtf:
     clocks:
       enabled: true
       position:
-        top: 2
+        top: 1
         left: 0
         height: 1
         width: 1
@@ -95,7 +87,7 @@ wtf:
       enabled: true
       position:
         top: 0
-        left: 1
+        left: 3
         height: 1
         width: 1
       refreshInterval: 3600
