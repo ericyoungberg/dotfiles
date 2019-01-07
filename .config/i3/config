@@ -104,6 +104,10 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 # Keyboard should always control focus
 focus_follows_mouse no
 
+# Move focused workspace to a different monitor
+bindsym $mod+Ctrl+h move workspace to output left
+bindsym $mod+Ctrl+l move workspace to output right
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
@@ -150,8 +154,8 @@ for_window [window_type="menu"] floating enable
 set $c_border      #C22323
 set $c_border_dark #841028
 set $transparent   #00000000
-set $white         #FFFFFF
-set $darkwhite     #FF5D43
+set $white         #FF3D23
+set $darkwhite     #FF7D53
 
 set $gaps 5
 
@@ -187,7 +191,7 @@ bar {
         separator          $transparent
 
 #                          BORDER       BACKGROUND   TEXT
-        focused_workspace  $transparent $darkwhite   $white
+        focused_workspace  $transparent $transparent $darkwhite
         inactive_workspace $transparent $transparent $white
         active_workspace   $transparent $transparent $white
     }

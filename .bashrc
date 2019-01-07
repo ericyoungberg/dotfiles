@@ -26,12 +26,17 @@ alias tmuxl='tmux list-sessions'
 alias tmuxd='tmux kill-session -t'
 alias tmuxr='tmux rename-session -t'
 
+# Settle network issues
+alias resnet="sudo systemctl restart network-manager"
+
 
 # Settings
 # ===============================================
 
 export TERM=xterm-256color
 export PS1="\\[\\e[1;36m\\][\\h] \\[\\033[01;32m\\]\\u\\[\\033[01;34m\\] \\W \$\\[\\033[00m\\] "
+
+xset r rate 160 25
 
 
 # Environments
@@ -47,7 +52,7 @@ export PATH=$PATH:/usr/local/sbin
 
 # Add Go to PATH
 export GOPATH=$HOME/go
-export GOROOT=/usr/local/go
+export GOROOT=/usr/lib/go
 export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.

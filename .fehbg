@@ -1,2 +1,2 @@
 #!/bin/sh
-'feh' '--bg-fill' '/home/eyoungberg/.dotfiles/images/autumn-red.jpg' 
+'feh' '--bg-fill' '/home/eyoungberg/.dotfiles/images/grad.png' 
