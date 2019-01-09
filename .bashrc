@@ -49,7 +49,7 @@ xset r rate 160 25
 source "$HOME/.git-completion.bash"
 
 # shellcheck source=/dev/null
-[[ -s "$HOME/.wtf/.env" ]] && source "$HOME/.wtf/.env"
+[[ -s "$HOME/.config/wtf/.env" ]] && source "$HOME/.config/wtf/.env"
 
 export PATH=$PATH:/usr/local/sbin
 

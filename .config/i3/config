@@ -70,6 +70,8 @@ set $workspace4 "4:Terminals"
 set $workspace5 "5:Atmosphere"
 set $workspace10 "10:Black Hole"
 
+exec --no-startup-id "i3-msg 'workspace 4:Terminals; append_layout ~/.config/i3/layouts/terminals.json'"
+
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
@@ -206,9 +208,11 @@ assign [class="Slack"] $workspace4
 
 exec_always --no-startup-id ~/.fehbg
 
-exec firefox
-exec --no-startup-id /usr/bin/slack
 exec --no-startup-id urxvt -name muxer
+exec --no-startup-id urxvt -name aux
+exec firefox
 exec --no-startup-id urxvt -name wtf -e /usr/local/bin/wtf
 exec --no-startup-id urxvt -name htop -e /usr/bin/htop
+exec --no-startup-id /usr/bin/slack
+exec --no-startup-id /usr/bin/discord
 exec --no-startup-id compton
