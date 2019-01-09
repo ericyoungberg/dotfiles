@@ -1,8 +1,22 @@
-! ------------------------------------------------------------------------------
-! ROFI Color theme
-! User: drk2
-! Copyright: DP
-! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: #252a2f, #1d1e24, #1f2836
+
+! Window: ‘background’, ‘border’, ‘separator’
+rofi.color-window: argb:ee2c101d, #FF0A0A, #FF0A0A
+
+! State: ‘bg’, ‘fg’, ‘altbg’, ‘hlbg’, hlfg
+rofi.color-normal: argb:002c101d, #FF0A0A, argb:002c101d, argb:009575cd, #FFFFFF
+rofi.color-active: argb:002c101d, #FF3D23, argb:002c101d, argb:009575cd, #ffc000
+rofi.color-urgent: argb:002c101d, #ff0000, argb:002c101d, argb:002c101d, #ff0000
+
+rofi.width: 30
+rofi.padding: 20
+rofi.line-margin: 6
+rofi.lines: 7
+rofi.separator-style: none
+rofi.columns: 2
+rofi.font: Hack 9
+rofi.bw: 2
+rofi.eh: 1
 rofi.separator-style: solid
+rofi.hide-scrollbar: true
+rofi.auto-select: false

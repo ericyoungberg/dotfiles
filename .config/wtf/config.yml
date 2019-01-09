@@ -7,7 +7,7 @@ wtf:
       normal: blue
   grid:
     columns: [40]
-    rows: [10, 7, 8, 9, 18, 27]
+    rows: [10, 7, 8, 9, 18, 28]
   refreshInterval: 1
   term: "xterm-256color"
   mods:
@@ -32,9 +32,8 @@ wtf:
       refreshInterval: 2
       commitCount: 4
       repositories:
-        - "/Users/eyoungberg/Projects/mapc/lead-dashboard"
-        - "/Users/eyoungberg/Projects/mapc/lead-estimator"
-        - "/Users/eyoungberg/Projects/mapc/datacommon"
+        - "/Users/eyoungberg/Projects/mapc/myschoolcommute2"
+        - "/Users/eyoungberg/Projects/mapc/digitalhub"
     github:
       enabled: true
       position:
@@ -45,8 +44,7 @@ wtf:
       refreshInterval: 300
       repositories:
         digitalhub: "MAPC"
-        datacommon: "MAPC"
-        databrowser: "MAPC"
+        myschoolcommute2: "MAPC"
         prql: "PrQL"
       username: "ericyoungberg"
     weather:
