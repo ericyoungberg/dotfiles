@@ -64,8 +64,8 @@ bindsym $mod+Shift+space focus mode_toggle
 
 # Workspaces
 set $workspace1 "1:Desktop"
-set $workspace2 "2:Viewer"
-set $workspace3 "3:Muxer"
+set $workspace2 "2:Muxer"
+set $workspace3 "3:Viewer"
 set $workspace4 "4:Terminals"
 set $workspace5 "5:Atmosphere"
 set $workspace10 "10:Black Hole"
@@ -85,8 +85,8 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace $workspace10
 
 workspace $workspace1 output DVI-0
-workspace $workspace2 output HDMI-0
-workspace $workspace3 output DVI-0
+workspace $workspace2 output DVI-0
+workspace $workspace3 output HDMI-0
 workspace $workspace4 output HDMI-0
 workspace $workspace5 output HDMI-0
 
@@ -120,16 +120,24 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 mode "resize" {
+        # Vim Keys -> normal resize
         bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym l resize shrink height 10 px or 10 ppt
         bindsym semicolon resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        # Arrow keys -> smaller resize
+        bindsym Left resize shrink width 2 px or 2 ppt
+        bindsym Down resize grow height 2 px or 2 ppt
+        bindsym Up resize shrink height 2 px or 2 ppt
+        bindsym Right resize grow width 2 px or 2 ppt
+
+        # Shift+Arrow keys -> smallest resize
+        bindsym Shift+Left resize shrink width 1 px or 1 ppt
+        bindsym Shift+Down resize grow height 1 px or 1 ppt
+        bindsym Shift+Up resize shrink height 1 px or 1 ppt
+        bindsym Shift+Right resize grow width 1 px or 1 ppt
+
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -200,10 +208,12 @@ bar {
 }
 
 # Applications
-assign [class="Firefox"] $workspace2
-assign [class="URxvt" instance="muxer"] $workspace3
+assign [class="Firefox"] $workspace3
+assign [class="URxvt" instance="muxer"] $workspace2
 assign [class="URxvt" instance="wtf"] $workspace4
 assign [class="URxvt" instance="htop"] $workspace4
+assign [class="URxvt" instance="aux"] $workspace4
+assign [class="discord"] $workspace4
 assign [class="Slack"] $workspace4
 
 exec_always --no-startup-id ~/.fehbg
@@ -211,7 +221,7 @@ exec_always --no-startup-id ~/.fehbg
 exec --no-startup-id urxvt -name muxer
 exec --no-startup-id urxvt -name aux
 exec firefox
-exec --no-startup-id urxvt -name wtf -e /usr/local/bin/wtf
+exec --no-startup-id urxvt -name wtf -e "source /home/eyoungberg/.bashrc; /usr/local/bin/wtf"
 exec --no-startup-id urxvt -name htop -e /usr/bin/htop
 exec --no-startup-id /usr/bin/slack
 exec --no-startup-id /usr/bin/discord

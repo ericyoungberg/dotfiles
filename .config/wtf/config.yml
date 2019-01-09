@@ -32,8 +32,8 @@ wtf:
       refreshInterval: 2
       commitCount: 4
       repositories:
-        - "/Users/eyoungberg/Projects/mapc/myschoolcommute2"
-        - "/Users/eyoungberg/Projects/mapc/digitalhub"
+        - "/home/eyoungberg/Projects/mapc/myschoolcommute2"
+        - "/home/eyoungberg/Projects/mapc/digitalhub"
     github:
       enabled: true
       position:
