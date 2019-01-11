@@ -146,16 +146,15 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-
 new_window none
 
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="bubble"] floating enable
 for_window [window_role="task_dialog"] floating enable
 for_window [window_role="Preferences"] floating enable
-
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
+
 
 ##
 # Design
@@ -221,7 +220,7 @@ exec_always --no-startup-id ~/.fehbg
 exec --no-startup-id urxvt -name muxer
 exec --no-startup-id urxvt -name aux
 exec firefox
-exec --no-startup-id urxvt -name wtf -e "source /home/eyoungberg/.bashrc; /usr/local/bin/wtf"
+exec --no-startup-id urxvt -name wtf -e /usr/local/bin/wtf
 exec --no-startup-id urxvt -name htop -e /usr/bin/htop
 exec --no-startup-id /usr/bin/slack
 exec --no-startup-id /usr/bin/discord
