@@ -216,12 +216,14 @@ assign [class="discord"] $workspace4
 assign [class="Slack"] $workspace4
 
 exec_always --no-startup-id ~/.fehbg
+exec --no-startup-id compton
+
+exec --no-startup-id /usr/bin/slack
+exec --no-startup-id /usr/bin/discord
 
 exec --no-startup-id urxvt -name muxer
 exec --no-startup-id urxvt -name aux
-exec firefox
 exec --no-startup-id urxvt -name wtf -e /usr/local/bin/wtf
 exec --no-startup-id urxvt -name htop -e /usr/bin/htop
-exec --no-startup-id /usr/bin/slack
-exec --no-startup-id /usr/bin/discord
-exec --no-startup-id compton
+
+exec firefox
