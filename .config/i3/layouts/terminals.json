@@ -63,35 +63,13 @@
             "current_border_width": 2,
             "floating": "auto_off",
             "geometry": {
-               "height": 515,
-               "width": 901,
-               "x": 0,
-               "y": 0
-            },
-            "name": "Discord",
-            "percent": 0.5,
-            "swallows": [
-               {
-                "class": "^discord$",
-                "instance": "^discord$",
-                "title": "^Discord$",
-                "window_role": "^browser\\-window$"
-               }
-            ],
-            "type": "con"
-        },
-        {
-            "border": "pixel",
-            "current_border_width": 2,
-            "floating": "auto_off",
-            "geometry": {
                "height": 338,
                "width": 663,
                "x": 1931,
                "y": 731
             },
-            "name": "Slack - Gophers",
-            "percent": 0.5,
+            "name": "Slack",
+            "percent": 1,
             "swallows": [
                {
                 "class": "^Slack$",
