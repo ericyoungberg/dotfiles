@@ -161,10 +161,10 @@ for_window [title="Thunar"] floating enable
 ##
 
 set $c_border      #914364
-set $c_border_dark #914364
+set $c_border_dark #9c0b9b
 set $transparent   #00000000
-set $white         #FF3D23
-set $darkwhite     #FF7D53
+set $white         #E810E8
+set $darkwhite     #480048
 
 set $gaps 6
 
@@ -193,16 +193,16 @@ bar {
     tray_output eDP1
     tray_output LVDS-0
     tray_padding 0
-    height 20
+    height 18
     colors {
-        statusline         $white
+        statusline         #FFFFFF
         background         $transparent
         separator          $transparent
 
 #                          BORDER       BACKGROUND   TEXT
-        focused_workspace  $transparent $transparent $darkwhite
-        inactive_workspace $transparent $transparent $white
-        active_workspace   $transparent $transparent $white
+        focused_workspace  $transparent $white       #FFFFFF
+        inactive_workspace $transparent #FFFFFF $white
+        active_workspace   $transparent #FFFFFF $white
     }
 }
 

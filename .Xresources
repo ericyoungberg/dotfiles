@@ -14,21 +14,24 @@ URxvt.depth: 32
 URxvt.scrollBar: false
 
 ! Color scheme
-#define t_background   [65]#914364
-#define t_foreground   #9c0b9b
-#define c_candy_red    #524d9b
-#define c_desert_sand  #E810E8
-#define c_mute_pink    #E856E8
-#define c_int_orange   #AC40AC
-#define c_sizzle_red   #FF3A54
+#define c_white        #FFFFFF
+#define c_deep_purple  #72379b
+#define c_east_purple  #9600FF
+#define c_east_blue    #00B8FF
+#define c_hot_pink     #FF00C1
+#define c_neon_purple  #E810E8
+#define c_neon_teal    #00FFF9
+
+#define t_background   [70]#3a1a2d
+#define t_foreground   c_neon_purple
 
 URxvt.background: t_background
 URxvt.foreground: t_foreground
 
-URxvt.color8: c_candy_red
-URxvt.color9: c_desert_sand
-URxvt.color10: c_mute_pink
-URxvt.color14: c_int_orange
-URxvt.color12: c_sizzle_red
+URxvt.color8: c_deep_purple
+URxvt.color9: c_white
+URxvt.color10: c_white
+URxvt.color14: c_hot_pink
+URxvt.color12: c_east_purple
 
 ! vim: set ft=xdefaults:
