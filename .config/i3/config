@@ -160,8 +160,8 @@ for_window [window_type="menu"] floating enable
 # Design
 ##
 
-set $c_border      #C22323
-set $c_border_dark #841028
+set $c_border      #914364
+set $c_border_dark #914364
 set $transparent   #00000000
 set $white         #FF3D23
 set $darkwhite     #FF7D53

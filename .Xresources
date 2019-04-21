@@ -12,12 +12,12 @@ URxvt.depth: 32
 URxvt.scrollBar: false
 
 ! Color scheme
-#define t_background   [65]#2C101D
-#define t_foreground   #FF3D23
-#define c_candy_red    #FF0A0A
-#define c_desert_sand  #DBD3AD
-#define c_mute_pink    #D3AB9E
-#define c_int_orange   #BF4E30
+#define t_background   [65]#914364
+#define t_foreground   #9c0b9b
+#define c_candy_red    #524d9b
+#define c_desert_sand  #E810E8
+#define c_mute_pink    #E856E8
+#define c_int_orange   #AC40AC
 #define c_sizzle_red   #FF3A54
 
 URxvt.background: t_background
