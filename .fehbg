@@ -1,2 +1,2 @@
 #!/bin/sh
-'feh' '--bg-fill' '/home/hob/Downloads/purp-blue-grad.png' 
+'feh' '--bg-fill' '/home/hob/.dotfiles/assets/purp-blue-grad.png' 
