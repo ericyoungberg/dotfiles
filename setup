@@ -5,42 +5,69 @@
 # the user's home directory.
 
 import os
-
-blacklist = [
-  './setup', 
-  './.git', 
-  './images',
-  './slack-theme',
-]
-
-root_dir = '.'
-home_dir = os.environ['HOME']
-
-for current_dir, sub_dirs, files in os.walk(root_dir):
-
-    # Remove any unwanted directories from our walk
-    sub_dirs[:] = [sub_dir for sub_dir in sub_dirs if os.path.join(current_dir, sub_dir) not in blacklist]
-
-    for file in files:
-        file_path = os.path.join(current_dir, file)
-
-        if not file_path in blacklist:
-
-            destination_dir = os.path.join(home_dir, current_dir[2:])
-            destination = os.path.join(destination_dir, file)
+import sys
+from glob import glob
 
 
-            # Make sure that we haven't already linked this file in a 
-            # previous setup.
+def run_install(file_num = None):
+  workdir = 'install'
+  file_glob = '%s-*' % file_num if file_num else '*.sh'
 
-            if not os.path.islink(destination):
-                if os.path.isfile(destination):
-                    os.rename(destination, destination + '.bak')
-                else:
-                    os.makedirs(destination_dir, exist_ok=True)
+  files = glob(os.path.join(workdir, file_glob))
+  for fpath in sorted(files):
+    os.system(fpath)
 
-                os.symlink(os.path.abspath(file_path), destination)
-                print(u'\u2713' + " Linking {0}...".format(file_path[2:]))
 
-            else:
-                print(u'\u2713' + " Already linked {0}...".format(file_path[2:]))
+def link_files():
+  blacklist = [
+    './setup', 
+    './.git', 
+    './assets',
+    './install',
+  ]
+
+  root_dir = '.'
+  home_dir = os.environ['HOME']
+
+  for current_dir, sub_dirs, files in os.walk(root_dir):
+
+      # Remove any unwanted directories from our walk
+      sub_dirs[:] = [sub_dir for sub_dir in sub_dirs if os.path.join(current_dir, sub_dir) not in blacklist]
+
+      for file in files:
+          file_path = os.path.join(current_dir, file)
+
+          if not file_path in blacklist:
+
+              destination_dir = os.path.join(home_dir, current_dir[2:])
+              destination = os.path.join(destination_dir, file)
+
+              # Make sure that we haven't already linked this file in a 
+              # previous setup.
+
+              if not os.path.islink(destination):
+                  if os.path.isfile(destination):
+                      os.rename(destination, destination + '.bak')
+                  else:
+                      os.makedirs(destination_dir, exist_ok=True)
+
+                  os.symlink(os.path.abspath(file_path), destination)
+                  print(u'\u2713' + " Linking {0}...".format(file_path[2:]))
+
+              else:
+                  print(u'\u2713' + " Already linked {0}...".format(file_path[2:]))
+
+
+def main():
+  if len(sys.argv) > 1 and sys.argv[1].replace('/', '') == 'install':
+    if len(sys.argv) > 2:
+      for f_num in sys.argv[1:]:
+        run_install(f_num)
+    else:
+      run_install()
+
+  link_files()
+
+
+if __name__ == '__main__':
+  main()
