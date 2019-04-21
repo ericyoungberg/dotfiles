@@ -17,6 +17,9 @@ else
 fi
 alias la='ls -lah'
 
+# Lock screen
+alias lock='i3lock -c 000000 -f'
+
 # Git shortcuts
 alias scoop='git add -A && git status --short'
 alias grog='git log --oneline | head -5'

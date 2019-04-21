@@ -3,6 +3,8 @@
 ! Settings
 URxvt.loginShell: true
 URxvt.cursorBlink: true
+URxvt.perl-ext-common: selection-to-clipboard
+URxvt.clipboard.autocopy: false
 
 ! Font
 URxvt.font: xft:Hack:pixelsize=11:antialias=true
