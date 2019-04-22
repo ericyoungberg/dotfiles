@@ -16,12 +16,14 @@ URxvt.scrollBar: false
 ! Color scheme
 #define c_white        #FFFFFF
 #define c_deep_purple  #72379b
+#define c_deep_pink    #AA005F
 #define c_east_purple  #9600FF
 #define c_east_blue    #00B8FF
 #define c_hot_pink     #FF00C1
 #define c_neon_purple  #E810E8
 #define c_neon_teal    #00FFF9
 #define c_orange       #f29215
+#define c_rich_brown   #66390f
 #define c_rich_orange  #F54F1E
 #define c_rich_purple  #240036
 #define c_soft_green   #2EF460
@@ -37,13 +39,13 @@ URxvt.background: t_background
 URxvt.foreground: t_foreground
 
 URxvt.color1: c_rich_orange
-URxvt.color2: c_soft_green
+URxvt.color2: c_rich_brown
 URxvt.color3: c_orange
 URxvt.color4: c_rich_orange
 URxvt.color5: c_hot_pink
 URxvt.color6: c_in_brown
 URxvt.color7: c_soft_green
-URxvt.color8: c_forest_green
+URxvt.color8: c_deep_pink
 URxvt.color9: c_soft_green
 URxvt.color10: c_orange
 URxvt.color11: c_in_brown
