@@ -9,7 +9,7 @@
     "nodes": [
         {
             "border": "pixel",
-            "current_border_width": 2,
+            "current_border_width": 0,
             "floating": "auto_off",
             "geometry": {
                "height": 261,
@@ -29,7 +29,7 @@
         },
         {
             "border": "pixel",
-            "current_border_width": 2,
+            "current_border_width": 0,
             "floating": "auto_off",
             "geometry": {
                "height": 340,
@@ -60,7 +60,7 @@
     "nodes": [
         {
             "border": "pixel",
-            "current_border_width": 2,
+            "current_border_width": 0,
             "floating": "auto_off",
             "geometry": {
                "height": 338,
@@ -84,7 +84,7 @@
 
 {
     "border": "pixel",
-    "current_border_width": 2,
+    "current_border_width": 0,
     "floating": "auto_off",
     "geometry": {
        "height": 340,

@@ -28,6 +28,7 @@ URxvt.scrollBar: false
 #define c_in_purple    #4A07A6
 #define c_in_brown     #A66C1F
 #define c_metal_red    #F54F1E
+#define c_forest_green #1a541a
 
 #define t_background   [90]#201220
 #define t_foreground   c_orange
@@ -36,13 +37,13 @@ URxvt.background: t_background
 URxvt.foreground: t_foreground
 
 URxvt.color1: c_rich_orange
-URxvt.color2: c_hot_pink
+URxvt.color2: c_soft_green
 URxvt.color3: c_orange
 URxvt.color4: c_rich_orange
 URxvt.color5: c_hot_pink
 URxvt.color6: c_in_brown
 URxvt.color7: c_soft_green
-URxvt.color8: c_white
+URxvt.color8: c_forest_green
 URxvt.color9: c_soft_green
 URxvt.color10: c_orange
 URxvt.color11: c_in_brown

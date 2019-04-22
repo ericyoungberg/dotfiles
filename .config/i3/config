@@ -165,14 +165,14 @@ set $c_border_dark #431743
 set $transparent   #00000000
 set $white         #FFFFFF
 set $light         #F29215
-set $dark          #2a2a2a
+set $dark          #F54F1E
 
 set $gaps 14
 
 gaps outer $gaps
 gaps inner $gaps
 
-default_border pixel 3
+default_border pixel 0
 client.focused $c_border_dark $c_border_dark $c_border_dark $c_border_dark $c_border_dark
 client.focused_inactive $c_border $c_border $c_border $c_border $c_border
 client.unfocused $c_border $c_border $c_border $c_border $c_border
@@ -196,12 +196,12 @@ bar {
     tray_padding 0
     height 18
     colors {
-        statusline         $c_border_light
+        statusline         $dark
         background         $transparent
         separator          $transparent
 
 #                          BORDER       BACKGROUND   TEXT
-        focused_workspace  $transparent $transparent $white
+        focused_workspace  $light       $transparent $dark
         inactive_workspace $transparent $transparent $light
         active_workspace   $transparent $transparent $light
     }
