@@ -16,6 +16,7 @@ apt-get install -y \
   silversearcher-ag \
   thunar \
   tmux \
+  unclutter \
   vim 
 
 

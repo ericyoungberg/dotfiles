@@ -160,18 +160,19 @@ for_window [title="Thunar"] floating enable
 # Design
 ##
 
-set $c_border      #914364
-set $c_border_dark #9c0b9b
+set $c_border      #F29215
+set $c_border_dark #F0F0F0
 set $transparent   #00000000
-set $white         #E810E8
-set $darkwhite     #480048
+set $white         #FFFFFF
+set $light         #F29215
+set $dark          #2a2a2a
 
-set $gaps 6
+set $gaps 14
 
 gaps outer $gaps
 gaps inner $gaps
 
-default_border pixel 2
+default_border pixel 3
 client.focused $c_border_dark $c_border_dark $c_border_dark $c_border_dark $c_border_dark
 client.focused_inactive $c_border $c_border $c_border $c_border $c_border
 client.unfocused $c_border $c_border $c_border $c_border $c_border
@@ -195,14 +196,14 @@ bar {
     tray_padding 0
     height 18
     colors {
-        statusline         #FFFFFF
+        statusline         $c_border_light
         background         $transparent
         separator          $transparent
 
 #                          BORDER       BACKGROUND   TEXT
-        focused_workspace  $transparent $white       #FFFFFF
-        inactive_workspace $transparent #FFFFFF $white
-        active_workspace   $transparent #FFFFFF $white
+        focused_workspace  $transparent $transparent $white
+        inactive_workspace $transparent $transparent $light
+        active_workspace   $transparent $transparent $light
     }
 }
 
@@ -215,6 +216,7 @@ assign [class="URxvt" instance="aux"] $workspace4
 assign [class="Slack"] $workspace4
 
 exec_always --no-startup-id ~/.fehbg
+exec --no-startup-id unclutter -grab
 exec --no-startup-id compton
 
 exec --no-startup-id /usr/bin/slack

@@ -21,9 +21,10 @@ URxvt.scrollBar: false
 #define c_hot_pink     #FF00C1
 #define c_neon_purple  #E810E8
 #define c_neon_teal    #00FFF9
+#define c_orange       #f29215
 
-#define t_background   [70]#3a1a2d
-#define t_foreground   c_neon_purple
+#define t_background   [90]#1d1a15
+#define t_foreground   c_orange
 
 URxvt.background: t_background
 URxvt.foreground: t_foreground
