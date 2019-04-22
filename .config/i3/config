@@ -161,7 +161,7 @@ for_window [title="Thunar"] floating enable
 ##
 
 set $c_border      #F29215
-set $c_border_dark #F0F0F0
+set $c_border_dark #431743
 set $transparent   #00000000
 set $white         #FFFFFF
 set $light         #F29215
