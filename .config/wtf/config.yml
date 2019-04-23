@@ -6,7 +6,7 @@ wtf:
       focused: lightblue
       normal: blue
   grid:
-    columns: [40]
+    columns: [38]
     rows: [10, 7, 8, 9, 18, 28]
   refreshInterval: 1
   term: "xterm-256color"
@@ -32,8 +32,7 @@ wtf:
       refreshInterval: 2
       commitCount: 4
       repositories:
-        - "/home/eyoungberg/Projects/mapc/myschoolcommute2"
-        - "/home/eyoungberg/Projects/mapc/digitalhub"
+        - "/home/hob/go/src/github.com/prql/prql"
     github:
       enabled: true
       position:
@@ -43,8 +42,6 @@ wtf:
         width: 1
       refreshInterval: 300
       repositories:
-        digitalhub: "MAPC"
-        myschoolcommute2: "MAPC"
         prql: "PrQL"
       username: "ericyoungberg"
     weather:
