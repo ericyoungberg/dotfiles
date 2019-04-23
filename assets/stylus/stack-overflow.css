@@ -1,0 +1,1708 @@
+/* ==UserStyle==
+@name         Stack Overflow Dark
+@version      3.1.1
+@description  Dark theme for Stack Overflow & most Stack Exchange network sites
+@namespace    StylishThemes
+@author       StylishThemes
+@homepageURL  https://github.com/StylishThemes/StackOverflow-Dark
+@supportURL   https://github.com/StylishThemes/StackOverflow-Dark/issues
+@updateURL    https://raw.githubusercontent.com/StylishThemes/StackOverflow-Dark/master/stackoverflow-dark.user.css
+@license      CC-BY-SA-4.0
+@advanced color base-color "Base color scheme" #4183C4
+@advanced color visited-color "Visited link color" #4183C4
+@advanced text font-choice "Code Font" Menlo
+@advanced text bg-choice "Background image [wrap in url()]" "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAAAAABURb1YAAAFnklEQVR4AWWXCY4cwXbE6h4JMhCvMPc/ov+3Ox9QsLCGpKlFHILd+UQ559AGDkBSFXWmomonqkL/XuUcIPUcONjHCJyE36KaqNiaRnVCG9TGpgIU9hIfohCBVGj24ammo04lU3Fy0NZDAyZi5AElHjgEGlRbG1WjraIt7TmADQkAaoEHsOXAAaeqat9RVTqjosyEH5W+DQCQt8BzIJMfXJI3e5tGRefSlRn3NrO3scnvNl26FN5RITGNfjm3GM/+FhQgnlQeImC+dEm8rzHVTNGL9EADVsTAIfGJBziRy7RlmcZU1IYpHIj+4JrWym8/XSwzompmFNVOFdTOAAfs61KZ6eXcp57fykQUOxNBmTesz2HpCnCg3UV/bA7VRpWGNqKtrYLTs0ilCjgxiZxjeLC5dDPBFn4Pn2ja6BRUL10DTgET4Focq8rn8casxV4E5tIlZvytqtfivCOKZrqc38G7egnkXecyPZdzubc57VtUnbfL+a0u3b1N3d9Mci7cKocHoh3xihLQ6fXUlgTOOfVkXSUFINoWHhqxE23RTmCqtoEJaITkIrUCkU9fnqpqm+40VSXS3CLaSzfGBb4rPuOSfN0ylLve6/jpcrbL2dTlnOdv5AamKjLvLN1XruMNS/cul/hx8twKpKYRaE2DOp8+c+lW7uVXVQ7Vx0x1G3HXjNocsHCac7NbWc6egwJVHu2kRTVNC2pqv2U4XNsv5/yWJlV9+NJ1C7xluInlcr7rK+Kg+qy7onQqgnbi7UHcS3qXjdw3bO5tumycYlVssMI5EXXpRnatPK362KodtVU60cm+eQT10sVLFwJYlVaf7UGSoi5dQF3DvnTX3UvXTPO8quKH7jsXhm/PxfKWZXqBM5sS33kmKtC31Q05fI095i5IPpyzRXqSy1Sr17p1F7NE8vMtnNbLpVVtk8c0OrfF0sKxHnIpYgHW4puMomTz8mgmrSjpvrxhX97l7LqLpl7bW9BH9/MNzF8XwRqL8/m7c30eFYV5VX3QTquK06XbLt16F4ks+8Z9m6gPtpcuk3OvibCekng4lzMHi9MoqZmKj9tdbQCbc7bcEA+oEJduRNNL1waf1tuI9MDBUK8t3k9uFz3rrqadO9Ln9TL/ezlwDvky3TW7ZmXfpc77TN0yhOXnP939LvVDV9s+tgLTm0TqYd1lea3PRFuVjLa562HdPbCfascGrvO3DMeIATVqVRO8vfHrbupdfo1dzlXUdkVLZsS1mLPG3rWcl+4B1l1537h0VXzU1tyLG7cCu+LSrSqo06hocy3WCcil65qHDbuEYzQN2HpT3jFt9LEFvHTP1nxbXOEkbhkKmd+6BTfVZ/I143z/Fyz6Za92o0I7I6gzfeYAHPwy/Rb43L9TLtMt8CtwW1xvQvbR1g9n7qJRNN1kdxcdH7cM58Szxq679MdLOhE72t6VNEpHHkzwRyjBcGth+dE99pIkVbWaEWmvnQ8Yl7Mp59zpRWXdNo6odrO754Zzvxf/010nP7onb1TR+bgbVPB9PcADJvH/043Kvk0UzLRxQ6UiaeTAcyxYl2lyrrvZv8v2wE7U1uVcST0821jJeIDKWuyxiqnuko7q3+zJYXJ46nV3D67EyL+lQ9F2qkr+3kUafQpwYE8T329p6y7OX1TF97fQv/c+l87zj7Hsgpig4qRLd9fMPs74rLGyCzRbhmVqpy7nqvPmTD1gvKe7b2U8u1QzmtuDuEtbgT3c8QBJveo6cueFkUwv59nVmfFw1jl4/unuOT9qERV76ers8n23z/c8/Xy7a4lwwLplmGusbRp33Up13+ZDN3KPxNVMhY62vUQyRTse6+cKHtZYjIfDh260Cjbb3Vy6R8H8SMBzqSwrsB1UTacoknlnOb8V4JD9Njfpwz/fHjpBUeevcAtcl65sqXPX9D87RUTLc/dfOgAAAABJRU5ErkJggg==')"
+@advanced dropdown bg-options "Background image type" {
+  Tiled "Tiled" <<<EOT
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  background-position: left top !important; EOT;
+  Fit window size "Fit window size" <<<EOT
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center top !important; EOT;
+}
+@advanced dropdown bg-attachment "Background image attachment" {
+  Scroll "Scroll" <<<EOT
+  scroll EOT;
+  Fixed "Fixed" <<<EOT
+  fixed EOT;
+}
+@advanced dropdown syntax-theme "Syntax theme" {
+  Desert "Desert" <<<EOT
+  /*! Desert *\/pre.prettyprint{display:block;background-color:#333!important;line-height:1.4em!important}pre .nocode{background-color:none!important;color:#000!important}pre .str,code .str{color:#ffa0a0!important}pre .kwd,code .kwd{color:#f0e68c!important;font-weight:bold!important}pre .com,code .com{color:#87ceeb!important}pre .typ,code .typ{color:#98fb98!important}pre .lit,code .lit{color:#cd5c5c!important}pre .pun,code .pun{color:#fff!important}pre .pln,code .pln{color:#fff!important}pre .tag,code .tag{color:#f0e68c!important;font-weight:bold!important}pre .atn,code .atn{color:#bdb76b!important;font-weight:bold!important}pre .atv,code .atv{color:#ffa0a0!important}pre .dec,code .dec{color:#98fb98!important}ol.linenums{margin-top:0;margin-bottom:0;color:#aeaeae}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none!important}@media print{pre.prettyprint{background-color:none!important}pre .str,code .str{color:#060!important}pre .kwd,code .kwd{color:#006!important;font-weight:bold!important}pre .com,code .com{color:#600!important;font-style:italic!important}pre .typ,code .typ{color:#404!important;font-weight:bold!important}pre .lit,code .lit{color:#044!important}pre .pun,code .pun{color:#440!important}pre .pln,code .pln{color:#000!important}pre .tag,code .tag{color:#006!important;font-weight:bold!important}pre .atn,code .atn{color:#404!important}pre .atv,code .atv{color:#060!important}} EOT;
+  Atelier-cave-dark "Atelier-cave-dark" <<<EOT
+  /*! Atelier-cave-dark *\/.prettyprint{background:#19171c!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#efecf4!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#655f6d!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#19171c!important;list-style-type:decimal!important}@media screen{.str{color:#2a9292!important}.kwd{color:#955ae7!important}.com{color:#655f6d!important}.typ{color:#576ddb!important}.lit{color:#aa573c!important}.pun{color:#efecf4!important}.opn{color:#efecf4!important}.clo{color:#efecf4!important}.tag{color:#be4678!important}.atn{color:#aa573c!important}.atv{color:#398bc6!important}.dec{color:#aa573c!important}.var{color:#be4678!important}.fun{color:#576ddb!important}} EOT;
+  Atelier-dune-dark "Atelier-dune-dark" <<<EOT
+  /*! Atelier-dune-dark *\/.prettyprint{background:#20201d!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#fefbec!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#7d7a68!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#20201d!important;list-style-type:decimal!important}@media screen{.str{color:#60ac39!important}.kwd{color:#b854d4!important}.com{color:#7d7a68!important}.typ{color:#6684e1!important}.lit{color:#b65611!important}.pun{color:#fefbec!important}.opn{color:#fefbec!important}.clo{color:#fefbec!important}.tag{color:#d73737!important}.atn{color:#b65611!important}.atv{color:#1fad83!important}.dec{color:#b65611!important}.var{color:#d73737!important}.fun{color:#6684e1!important}} EOT;
+  Atelier-estuary-dark "Atelier-estuary-dark" <<<EOT
+  /*! Atelier-estuary-dark *\/.prettyprint{background:#22221b!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#f4f3ec!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#6c6b5a!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#22221b!important;list-style-type:decimal!important}@media screen{.str{color:#7d9726!important}.kwd{color:#5f9182!important}.com{color:#6c6b5a!important}.typ{color:#36a166!important}.lit{color:#ae7313!important}.pun{color:#f4f3ec!important}.opn{color:#f4f3ec!important}.clo{color:#f4f3ec!important}.tag{color:#ba6236!important}.atn{color:#ae7313!important}.atv{color:#5b9d48!important}.dec{color:#ae7313!important}.var{color:#ba6236!important}.fun{color:#36a166!important}} EOT;
+  Atelier-forest-dark "Atelier-forest-dark" <<<EOT
+  /*! Atelier-forest-dark *\/.prettyprint{background:#1b1918!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#f1efee!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#766e6b!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#1b1918!important;list-style-type:decimal!important}@media screen{.str{color:#7b9726!important}.kwd{color:#6666ea!important}.com{color:#766e6b!important}.typ{color:#407ee7!important}.lit{color:#df5320!important}.pun{color:#f1efee!important}.opn{color:#f1efee!important}.clo{color:#f1efee!important}.tag{color:#f22c40!important}.atn{color:#df5320!important}.atv{color:#3d97b8!important}.dec{color:#df5320!important}.var{color:#f22c40!important}.fun{color:#407ee7!important}} EOT;
+  Atelier-heath-dark "Atelier-heath-dark" <<<EOT
+  /*! Atelier-heath-dark *\/.prettyprint{background:#1b181b!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#f7f3f7!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#776977!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#1b181b!important;list-style-type:decimal!important}@media screen{.str{color:#918b3b!important}.kwd{color:#7b59c0!important}.com{color:#776977!important}.typ{color:#516aec!important}.lit{color:#a65926!important}.pun{color:#f7f3f7!important}.opn{color:#f7f3f7!important}.clo{color:#f7f3f7!important}.tag{color:#ca402b!important}.atn{color:#a65926!important}.atv{color:#159393!important}.dec{color:#a65926!important}.var{color:#ca402b!important}.fun{color:#516aec!important}} EOT;
+  Atelier-lakeside-dark "Atelier-lakeside-dark" <<<EOT
+  /*! Atelier-lakeside-dark *\/.prettyprint{background:#161b1d!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#ebf8ff!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#5a7b8c!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#161b1d!important;list-style-type:decimal!important}@media screen{.str{color:#568c3b!important}.kwd{color:#6b6bb8!important}.com{color:#5a7b8c!important}.typ{color:#257fad!important}.lit{color:#935c25!important}.pun{color:#ebf8ff!important}.opn{color:#ebf8ff!important}.clo{color:#ebf8ff!important}.tag{color:#d22d72!important}.atn{color:#935c25!important}.atv{color:#2d8f6f!important}.dec{color:#935c25!important}.var{color:#d22d72!important}.fun{color:#257fad!important}} EOT;
+  Atelier-plateau-dark "Atelier-plateau-dark" <<<EOT
+  /*! Atelier-plateau-dark *\/.prettyprint{background:#1b1818!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#f4ecec!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#655d5d!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#1b1818!important;list-style-type:decimal!important}@media screen{.str{color:#4b8b8b!important}.kwd{color:#8464c4!important}.com{color:#655d5d!important}.typ{color:#7272ca!important}.lit{color:#b45a3c!important}.pun{color:#f4ecec!important}.opn{color:#f4ecec!important}.clo{color:#f4ecec!important}.tag{color:#ca4949!important}.atn{color:#b45a3c!important}.atv{color:#5485b6!important}.dec{color:#b45a3c!important}.var{color:#ca4949!important}.fun{color:#7272ca!important}} EOT;
+  Atelier-savanna-dark "Atelier-savanna-dark" <<<EOT
+  /*! Atelier-savanna-dark *\/.prettyprint{background:#171c19!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#ecf4ee!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#5f6d64!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#171c19!important;list-style-type:decimal!important}@media screen{.str{color:#489963!important}.kwd{color:#55859b!important}.com{color:#5f6d64!important}.typ{color:#478c90!important}.lit{color:#9f713c!important}.pun{color:#ecf4ee!important}.opn{color:#ecf4ee!important}.clo{color:#ecf4ee!important}.tag{color:#b16139!important}.atn{color:#9f713c!important}.atv{color:#1c9aa0!important}.dec{color:#9f713c!important}.var{color:#b16139!important}.fun{color:#478c90!important}} EOT;
+  Atelier-seaside-dark "Atelier-seaside-dark" <<<EOT
+  /*! Atelier-seaside-dark *\/.prettyprint{background:#131513!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#f4fbf4!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#687d68!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#131513!important;list-style-type:decimal!important}@media screen{.str{color:#29a329!important}.kwd{color:#ad2bee!important}.com{color:#687d68!important}.typ{color:#3d62f5!important}.lit{color:#87711d!important}.pun{color:#f4fbf4!important}.opn{color:#f4fbf4!important}.clo{color:#f4fbf4!important}.tag{color:#e6193c!important}.atn{color:#87711d!important}.atv{color:#1999b3!important}.dec{color:#87711d!important}.var{color:#e6193c!important}.fun{color:#3d62f5!important}} EOT;
+  Atelier-sulphurpool-dark "Atelier-sulphurpool-dark" <<<EOT
+  /*! Atelier-sulphurpool-dark *\/.prettyprint{background:#202746!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#f5f7ff!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#6b7394!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#202746!important;list-style-type:decimal!important}@media screen{.str{color:#ac9739!important}.kwd{color:#6679cc!important}.com{color:#6b7394!important}.typ{color:#3d8fd1!important}.lit{color:#c76b29!important}.pun{color:#f5f7ff!important}.opn{color:#f5f7ff!important}.clo{color:#f5f7ff!important}.tag{color:#c94922!important}.atn{color:#c76b29!important}.atv{color:#22a2c9!important}.dec{color:#c76b29!important}.var{color:#c94922!important}.fun{color:#3d8fd1!important}} EOT;
+  Doxy "Doxy" <<<EOT
+  /*! Doxy *\/pre .str,code .str{color:#fec243!important}pre .kwd,code .kwd{color:#8470ff!important}pre .com,code .com{color:#32cd32!important;font-style:italic!important}pre .typ,code .typ{color:#6ecbcc!important}pre .lit,code .lit{color:#d06!important}pre .pun,code .pun{color:#8b8970!important}pre .pln,code .pln{color:#f0f0f0!important}pre .tag,code .tag{color:#9c9cff!important}pre .htm,code .htm{color:#dda0dd!important}pre .xsl,code .xsl{color:#d0a0d0!important}pre .atn,code .atn{color:#46eeee!important;font-weight:normal!important}pre .atv,code .atv{color:#eeb4b4!important}pre .dec,code .dec{color:#3387cc!important}a{text-decoration:none!important}pre.prettyprint,code.prettyprint{font-family:'Droid Sans Mono','CPMono_v07 Bold','Droid Sans'!important;font-weight:bold!important;background-color:#0f0f0f!important}pre.prettyprint{width:95%!important;margin:1em auto!important;padding:1em!important;white-space:pre-wrap!important;line-height:1.4em!important}pre.prettyprint a,code.prettyprint a{text-decoration:none!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#8b8970!important}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none!important}@media print{pre.prettyprint,code.prettyprint{background-color:#fff!important}pre .str,code .str{color:#088!important}pre .kwd,code .kwd{color:#006!important;font-weight:bold!important}pre .com,code .com{color:#0c3!important;font-style:italic!important}pre .typ,code .typ{color:#404!important;font-weight:bold!important}pre .lit,code .lit{color:#044!important}pre .pun,code .pun{color:#440!important}pre .pln,code .pln{color:#000!important}pre .tag,code .tag{color:#b66ff7!important;font-weight:bold!important}pre .htm,code .htm{color:#606!important;font-weight:bold!important}pre .xsl,code .xsl{color:#606!important;font-weight:bold!important}pre .atn,code .atn{color:#c71585!important;font-weight:normal!important}pre .atv,code .atv{color:#088!important;font-weight:normal!important}} EOT;
+  Hemisu Dark "Hemisu Dark" <<<EOT
+  /*! Hemisu Dark *\/.prettyprint{background:black!important;font-family:Menlo,'Bitstream Vera Sans Mono','DejaVu Sans Mono',Monaco,Consolas,monospace!important;line-height:1.4em!important;padding:10px!important}.pln{color:#eee!important}@media screen{.str{color:#b1d631!important}.kwd{color:#b1d631!important}.com{color:#777!important}.typ{color:#bfa!important}.lit{color:#9fd3e6!important}.pun{color:#eee!important}.opn{color:#eee!important}.clo{color:#eee!important}.tag{color:#eee!important}.atn{color:#b1d631!important}.atv{color:#bfa!important}.dec{color:#eee!important}.var{color:#eee!important}.fun{color:#9fd3e6!important}}@media print,projection{.str{color:#060!important}.kwd{color:#006!important;font-weight:bold!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:bold!important}.lit{color:#044!important}.pun,.opn,.clo{color:#440!important}.tag{color:#006!important;font-weight:bold!important}.atn{color:#404!important}.atv{color:#060!important}}ol.linenums{margin-top:0!important;margin-bottom:0!important} EOT;
+  Material "Material" <<<EOT
+  /*! Material *\/code{background-color:transparent}pre .str,code .str{color:#c3e88d!important}pre .kwd,code .kwd{color:#c792ea!important}pre .com,code .com{color:#546e7a!important;font-style:italic!important}pre .typ,code .typ{color:#ff8282!important}pre .lit,code .lit{color:#ae81ff!important}pre .pun,code .pun{color:#80cbc4!important}pre .pln,code .pln{color:#fff!important}pre .tag,code .tag{color:#ff5370!important}pre .atn,code .atn{color:#ffcb6b!important}pre .atv,code .atv{color:#c3e88d!important}pre .dec,code .dec{color:#ae81ff!important}pre.prettyprint,code.prettyprint{background-color:#272822!important;font-family:consolas,menlo,courier,monospace!important} EOT;
+  Monokai-RaphaelDDL "Monokai-RaphaelDDL" <<<EOT
+  /*! Monokai-RaphaelDDL *\/pre .str,code .str{color:#e6db5a!important}pre .kwd,code .kwd{color:#66d9ef!important}pre .com,code .com{color:#75715e!important;font-style:italic!important}pre .typ,code .typ{color:#66d9ef!important}pre .lit,code .lit{color:#ae81ff!important}pre .pun,code .pun{color:#fff!important}pre .pln,code .pln{color:#fff!important}pre .tag,code .tag{color:#f92672!important}pre .atn,code .atn{color:#a6e22a!important}pre .atv,code .atv{color:#e6db74!important}pre .dec,code .dec{color:#ae81ff!important}pre.prettyprint,code.prettyprint{background-color:#272822!important;font-family:consolas,menlo,courier,monospace!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#75715e!important;list-style:decimal inside!important}@media print{pre.prettyprinted,pre.prettyprint,code.prettyprint{background-color:#fff;color:#000}pre .str,code .str{color:#060}pre .kwd,code .kwd{color:#006;font-weight:bold}pre .com,code .com{color:#600;font-style:italic}pre .typ,code .typ{color:#404;font-weight:bold}pre .lit,code .lit{color:#044}pre .pun,code .pun{color:#440}pre .pln,code .pln{color:#000}pre .tag,code .tag{color:#006;font-weight:bold}pre .atn,code .atn{color:#404}pre .atv,code .atv{color:#060}} EOT;
+  Sons of Obsidian "Sons of Obsidian" <<<EOT
+  /*! Sons of Obsidian *\/.str{color:#ec7600!important}.kwd{color:#93c763!important}.com{color:#66747b!important}.typ{color:#678cb1!important}.lit{color:#facd22!important}.pun{color:#f1f2f3!important}.pln{color:#f1f2f3!important}.tag{color:#8ac763!important}.atn{color:#e0e2e4!important}.atv{color:#ec7600!important}.dec{color:purple!important}pre.prettyprint{border:0 solid #888!important}ol.linenums{margin-top:0!important;margin-bottom:0!important}.prettyprint{background:#000!important;line-height:1.4em!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{color:#555!important;list-style-type:decimal!important}li.L1,li.L3,li.L5,li.L7,li.L9{background:#111!important}@media print{.str{color:#060!important}.kwd{color:#006!important;font-weight:bold!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:bold!important}.lit{color:#044!important}.pun{color:#440!important}.pln{color:#000!important}.tag{color:#006!important;font-weight:bold!important}.atn{color:#404!important}.atv{color:#060!important}} EOT;
+  Sunburst "Sunburst" <<<EOT
+  /*! Sunburst *\/pre .str,code .str{color:#65b042!important}pre .kwd,code .kwd{color:#e28964!important}pre .com,code .com{color:#aeaeae!important;font-style:italic!important}pre .typ,code .typ{color:#89bdff!important}pre .lit,code .lit{color:#3387cc!important}pre .pun,code .pun{color:#fff!important}pre .pln,code .pln{color:#fff!important}pre .tag,code .tag{color:#89bdff!important}pre .atn,code .atn{color:#bdb76b!important}pre .atv,code .atv{color:#65b042!important}pre .dec,code .dec{color:#3387cc!important}pre.prettyprint,code.prettyprint{background-color:#000!important}pre.prettyprint{width:95%!important;margin:1em auto!important;padding:1em!important;white-space:pre-wrap!important;line-height:1.4em!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#aeaeae!important}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{list-style-type:none!important}@media print{pre .str,code .str{color:#060!important}pre .kwd,code .kwd{color:#006!important;font-weight:bold!important}pre .com,code .com{color:#600!important;font-style:italic!important}pre .typ,code .typ{color:#404!important;font-weight:bold!important}pre .lit,code .lit{color:#044!important}pre .pun,code .pun{color:#440!important}pre .pln,code .pln{color:#000!important}pre .tag,code .tag{color:#006!important;font-weight:bold!important}pre .atn,code .atn{color:#404!important}pre .atv,code .atv{color:#060!important}} EOT;
+  Tomorrow Night Blue "Tomorrow Night Blue" <<<EOT
+  /*! Tomorrow Night Blue *\/.prettyprint{background:#002451!important;font-family:Menlo,'Bitstream Vera Sans Mono','DejaVu Sans Mono',Monaco,Consolas,monospace!important;line-height:1.4em!important;padding:10px!important}.pln{color:white!important}@media screen{.str{color:#d1f1a9!important}.kwd{color:#ebbbff!important}.com{color:#7285b7!important}.typ{color:#bbdaff!important}.lit{color:#ffc58f!important}.pun{color:white!important}.opn{color:white!important}.clo{color:white!important}.tag{color:#ff9da4!important}.atn{color:#ffc58f!important}.atv{color:#9ff!important}.dec{color:#ffc58f!important}.var{color:#ff9da4!important}.fun{color:#bbdaff!important}}@media print,projection{.str{color:#060!important}.kwd{color:#006!important;font-weight:bold!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:bold!important}.lit{color:#044!important}.pun,.opn,.clo{color:#440!important}.tag{color:#006!important;font-weight:bold!important}.atn{color:#404!important}.atv{color:#060!important}}ol.linenums{margin-top:0!important;margin-bottom:0!important} EOT;
+  Tomorrow Night Bright "Tomorrow Night Bright" <<<EOT
+  /*! Tomorrow Night Bright *\/.prettyprint{background:black!important;font-family:Menlo,'Bitstream Vera Sans Mono','DejaVu Sans Mono',Monaco,Consolas,monospace!important;line-height:1.4em!important;padding:10px!important}.pln{color:#eaeaea!important}@media screen{.str{color:#b9ca4a!important}.kwd{color:#c397d8!important}.com{color:#969896!important}.typ{color:#7aa6da!important}.lit{color:#e78c45!important}.pun{color:#eaeaea!important}.opn{color:#eaeaea!important}.clo{color:#eaeaea!important}.tag{color:#d54e53!important}.atn{color:#e78c45!important}.atv{color:#70c0b1!important}.dec{color:#e78c45!important}.var{color:#d54e53!important}.fun{color:#7aa6da!important}}@media print,projection{.str{color:#060!important}.kwd{color:#006!important;font-weight:bold!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:bold!important}.lit{color:#044!important}.pun,.opn,.clo{color:#440!important}.tag{color:#006!important;font-weight:bold!important}.atn{color:#404!important}.atv{color:#060!important}}ol.linenums{margin-top:0!important;margin-bottom:0!important} EOT;
+  Tomorrow Night Eighties "Tomorrow Night Eighties" <<<EOT
+  /*! Tomorrow Night Eighties *\/.prettyprint{background:#2d2d2d!important;font-family:Menlo,'Bitstream Vera Sans Mono','DejaVu Sans Mono',Monaco,Consolas,monospace!important;line-height:1.4em!important;padding:10px!important}.pln{color:#ccc!important}@media screen{.str{color:#9c9!important}.kwd{color:#c9c!important}.com{color:#999!important}.typ{color:#69c!important}.lit{color:#f99157!important}.pun{color:#ccc!important}.opn{color:#ccc!important}.clo{color:#ccc!important}.tag{color:#f2777a!important}.atn{color:#f99157!important}.atv{color:#6cc!important}.dec{color:#f99157!important}.var{color:#f2777a!important}.fun{color:#69c!important}}@media print,projection{.str{color:#060!important}.kwd{color:#006!important;font-weight:bold!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:bold!important}.lit{color:#044!important}.pun,.opn,.clo{color:#440!important}.tag{color:#006!important;font-weight:bold!important}.atn{color:#404!important}.atv{color:#060!important}}ol.linenums{margin-top:0!important;margin-bottom:0!important} EOT;
+  Tomorrow Night "Tomorrow Night" <<<EOT
+  /*! Tomorrow Night *\/.prettyprint{background:#1d1f21!important;font-family:Menlo,'Bitstream Vera Sans Mono','DejaVu Sans Mono',Monaco,Consolas,monospace!important;line-height:1.4em!important;padding:10px!important}.pln{color:#c5c8c6!important}@media screen{.str{color:#b5bd68!important}.kwd{color:#b294bb!important}.com{color:#969896!important}.typ{color:#81a2be!important}.lit{color:#de935f!important}.pun{color:#c5c8c6!important}.opn{color:#c5c8c6!important}.clo{color:#c5c8c6!important}.tag{color:#c66!important}.atn{color:#de935f!important}.atv{color:#8abeb7!important}.dec{color:#de935f!important}.var{color:#c66!important}.fun{color:#81a2be!important}}@media print,projection{.str{color:#060!important}.kwd{color:#006!important;font-weight:bold!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:bold!important}.lit{color:#044!important}.pun,.opn,.clo{color:#440!important}.tag{color:#006!important;font-weight:bold!important}.atn{color:#404!important}.atv{color:#060!important}}ol.linenums{margin-top:0!important;margin-bottom:0!important} EOT;
+  Tranquil-heart "Tranquil-heart" <<<EOT
+  /*! Tranquil-heart *\/.prettyprint{background:#2f3640!important;font-family:Menlo,"Bitstream Vera Sans Mono","DejaVu Sans Mono",Monaco,Consolas,monospace!important;border:0!important}.pln{color:#e6e9ed!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#656d78!important}li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{padding-left:1em!important;background-color:#2f3640!important;list-style-type:decimal!important}@media screen{.str{color:#ffce54!important}.kwd{color:#4fc1e9!important}.com{color:#656d78!important}.typ{color:#4fc1e9!important}.lit{color:#ac92ec!important}.pun{color:#e6e9ed!important}.opn{color:#e6e9ed!important}.clo{color:#e6e9ed!important}.tag{color:#ed5565!important}.atn{color:#a0d468!important}.atv{color:#ffce54!important}.dec{color:#ac92ec!important}.var{color:#e6e9ed!important}.fun{color:#e6e9ed!important}} EOT;
+  Vibrant Ink "Vibrant Ink" <<<EOT
+  /*! Vibrant Ink *\/.prettyprint{background:black!important;font-family:Menlo,'Bitstream Vera Sans Mono','DejaVu Sans Mono',Monaco,Consolas,monospace!important;line-height:1.4em!important;padding:10px!important}.pln{color:white!important}@media screen{.str{color:#6f0!important}.kwd{color:#f60!important}.com{color:#93c!important}.typ{color:#458!important}.lit{color:#458!important}.pun{color:white!important}.opn{color:white!important}.clo{color:white!important}.tag{color:white!important}.atn{color:#9c9!important}.atv{color:#6f0!important}.dec{color:white!important}.var{color:white!important}.fun{color:#fc0!important}}@media print,projection{.str{color:#060!important}.kwd{color:#006!important;font-weight:bold!important}.com{color:#600!important;font-style:italic!important}.typ{color:#404!important;font-weight:bold!important}.lit{color:#044!important}.pun,.opn,.clo{color:#440!important}.tag{color:#006!important;font-weight:bold!important}.atn{color:#404!important}.atv{color:#060!important}}ol.linenums{margin-top:0!important;margin-bottom:0!important} EOT;
+  vscode-monaco "vscode-monaco" <<<EOT
+  /*! vscode-monaco *\/pre .com,code .com{color:rgba(96,139,78,1)!important}pre .str,code .str{color:rgba(206,145,120,1)!important}pre .atv,code .atv{color:rgba(206,145,120,1)!important}pre .kwd,code .kwd{color:rgba(197,134,192,1)!important}pre .typ,code .typ{color:rgba(156,220,254,1)!important}pre .tag,code .tag{color:rgba(78,201,176,1)!important}pre .atn,code .atn{color:rgba(156,220,254,1)!important}pre .pun,code .pun{color:rgba(212,212,212,1)!important}pre .pln,code .pln{color:rgba(220,220,170,1)!important}pre .lit,code .lit{color:rgba(181,206,168,1)!important}pre .dec,code .dec{color:rgba(181,206,168,1)!important}pre.prettyprint,code.prettyprint{border:0!important;border-radius:3px!important;color:#bbb!important;background-color:#1e1e1e!important;width:95%!important}pre.prettyprint{margin:1em auto!important;padding:1em!important;white-space:pre-wrap!important;font-family:Consolas,'Courier New',monospace!important;font-size:14px!important;line-height:19px!important}ol.linenums{margin-top:0!important;margin-bottom:0!important;color:#5a5a5a!important}li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{padding-left:5px!important}@media print{pre .str,code .str{color:#060!important}pre .kwd,code .kwd{color:#006!important;font-weight:bold!important}pre .com,code .com{color:#600!important;font-style:italic!important}pre .typ,code .typ{color:#404!important;font-weight:bold!important}pre .lit,code .lit{color:#044!important}pre .pun,code .pun{color:#440!important}pre .pln,code .pln{color:#000!important}pre .tag,code .tag{color:#006!important;font-weight:bold!important}pre .atn,code .atn{color:#404!important}pre .atv,code .atv{color:#060!important}} EOT;
+}
+@advanced text img-opacity "Reduced image opacity (0-1)" .5
+@preprocessor uso
+==/UserStyle== */
+@-moz-document regexp("^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*"),
+domain("serverfault.com"),
+domain("superuser.com"),
+domain("stackapps.com"),
+domain("mathoverflow.net"),
+domain("askubuntu.com"),
+regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*") {
+  /**
+   * Stack Overflow Dark
+   * https://github.com/StylishThemes/StackOverflow-Dark
+   * http://userstyles.org/styles/35345
+   * ** Will apply to almost all Stack Exchange Sites **
+   * Except:
+   * - Area 51 (area51.stackexchange.com)
+   * - Gaming (gaming.stackexchange.com)
+   * ** Please open an issue to report sites where the style breaks **
+   * https://github.com/StylishThemes/StackOverflow-Dark/issues
+   * previous version information contained at the userstyles site
+   */
+  * {
+    border-color: #444 !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+  body {
+    background-color: #191919 !important;
+    background-image: /*[[bg-choice]]*/ !important;
+    background-clip: border-box !important;
+    background-origin: padding-box !important;
+    background-attachment: /*[[bg-attachment]]*/ !important;
+    /*[[bg-options]]*/
+  }
+  /* custom code font */
+  pre.prettyprint, code {
+    font-family: "/*[[font-choice]]*/",
+      Monaco,
+      Consolas,
+      "Liberation Mono",
+      Menlo,
+      Courier,
+      monospace !important;
+  }
+  /* === custom color === */
+  a:not([class*="comment-"]), .profile-popup a, .seWrapper a, .gs-title b,
+  .spoiler:hover a, .comment-up-on, .comment-up-off:hover {
+    color: /*[[base-color]]*/ !important;
+  }
+  .nav .primarynav li a:hover, .message.message-config .actions .button,
+  .btn-careers:hover, .btn-careers:visited, .question-list-layout a:hover {
+    color: #fff !important;
+    background: /*[[base-color]]*/ !important;
+  }
+  input[type="submit"].btn-clear, input[type="button"].btn-clear,
+  button.btn-clear, .btn-clear {
+    color: /*[[base-color]]*/ !important;
+  }
+  input[type="submit"].btn-clear:hover, input[type="button"].btn-clear:hover,
+  button.btn-clear:hover, .btn-clear:hover, input[type="submit"].btn-clear:focus,
+  input[type="button"].btn-clear:focus, button.btn-clear:focus, .btn-clear:focus {
+    color: /*[[base-color]]*/ !important;
+    background: #273045 !important;
+  }
+  a.post-tag:hover, .bounty-indicator, .bounty-indicator-tab, .bounty-award,
+  span.bounty-indicator-tab, #change-picture, .supernovabg, .hotbg,
+  .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count,
+  .pager a:hover span, .bounties-tab, #sidebar a[href*="/questions/ask"],
+  #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover,
+  .s-btn.s-btn__primary, .s-btn.s-btn__primary:focus,
+  .top-bar .-secondary .-ctas .btn-topbar-primary,
+  .top-bar .-secondary .-ctas .btn-topbar-primary:focus,
+  .user-card-name .top-badge, .user-card-name .top-badge a {
+    background-color: /*[[base-color]]*/ !important;
+    color: #eee !important;
+  }
+  #tabs a.youarehere:before, .tabs a.youarehere:before,
+  .newnav .tabs-list-container .tabs-list .intellitab a.youarehere:before {
+    background-color: /*[[base-color]]*/ !important;
+  }
+  .s-btn.s-btn__primary:hover, .top-bar .-secondary .-ctas .btn-topbar-clear,
+  .top-bar .-secondary .-ctas .btn-topbar-clear:focus {
+    filter: brightness(1.1) !important;
+  }
+  /* === text selection === */
+  ::selection {
+    background: /*[[base-color]]*/ !important;
+    color: #fff !important;
+  }
+  ::-moz-selection {
+    background: /*[[base-color]]*/ !important;
+    color: #fff !important;
+  }
+  /* === input focus hightlight === */
+  input:focus, textarea:focus,
+  .chosen-container.chosen-container-active .chosen-choices,
+  .chosen-container .active-result.highlighted {
+    border-color: /*[[base-color]]*/ !important;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 2px /*[[base-color]]*/ !important;
+    outline-color: transparent !important;
+  }
+  .tag-editor input:focus, .previous-button, .next-button, .btn-clear,
+  .chosen-container.chosen-container-active .chosen-choices input,
+  .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult,
+  .s-sidebarwidget:after, .profile-top-tags .badge-tag {
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  .profile-avatar {
+    box-shadow: inset 0 10em 0 #333 !important;
+  }
+  .menu-switcher {
+            filter: none !important;
+    -webkit-filter: none !important;
+  }
+  /* === hidden === */
+  div.hireme, div#hireme, .next-answer-hook-container, .intellitab:after,
+  .s-hero .-container {
+    display: none !important;
+  }
+  /* === background color === */
+  /* from darkest to lightest grey */
+  .popup-badges .all-badge-progress .completed:before, .previous-button,
+  .next-button, #footer,
+  /* === herobox when not logged in === */ #herobox.alternate, .message-title {
+    background-color: rgba(0, 0, 0, .4) !important;
+  }
+  header {
+    background-color: #080808 !important;
+  }
+  #custom-header, .review-bar, .diff-choices a.selected, #header #topbar,
+  td.owner, a.owner, .question-status, .profile-popup, .profile-popup div,
+  .profile-popup th, .profile-popup td, #global, .actual-edit-overlay,
+  input:not([type="submit"]), textarea, #search input, .tag-editor,
+  .f-select > select, textarea#input,
+  .search-form .chosen-container .chosen-choices, .pac-container, select,
+  #match-preferences-editor .close:hover, .gsc-input-box, .gsc-option-menu,
+  .subheader, .min-ds-wizard .min-ds-box.jobs {
+    background-color: #111 !important;
+    color: #ddd !important;
+  }
+  .gsc-selected-option-container {
+    background: #111 !important;
+  }
+  .onebox, .profile-ad, .message.message-config, .so-header a:hover,
+  .so-header a.topbar-icon-on, .topbar-dialog .header,
+  .header-edit-section:hover, .timeline-item, .sidebar-profile .-item,
+  .btn-outlined.-white:hover, .btn-outlined:hover, .top-bar a:hover,
+  .top-bar a:focus, .top-bar .-item._active, .top-bar .-link.topbar-icon-on,
+  .top-bar .-link.topbar-icon-on:hover, .top-bar .-feature-notice:hover,
+  .top-bar .-feature-notice.topbar-icon-on, .topbar-dialog .dialog-content,
+  .feature-notice-dialog:before, .-item.social,
+  .salary-results-container .collection, .sidebar #post-job,
+  .sidebar .salary-survey-sidebar, .ui-dialog, .salary-calculator-calculator,
+  .sticky-menu-wrapper._sticky, .-summary, .field._toolbar .-toolbar,
+  .timeline .feature-banner__background {
+    background: #151515 !important;
+  }
+  html, blockquote, #post-preview, .nav .primarynav li a, #chat,
+  #hsearch .textbox, .form-item, .grippie, .welovestackoverflow, #wmd-button-bar,
+  .wmd-button-bar, .qa-block, .content-block, .user-info-rep, .sidebar, .popup,
+  .full-diff, .val-success, .search-form .filter-pane nav, .s-card,
+  .chosen-container .chosen-drop, .pac-item.pac-item-selected, .pac-item:hover,
+  .-item.social:hover, #add-tags-button, #filter-preview, .salary-results {
+    background: #191919 !important;
+  }
+  .authcomment, .seIntro, .seFooter, .title-banner, .salary-results-wrapper,
+  .salary-skill-legend, .msg-list .list-item.is-unread {
+    background-color: #191919 !important;
+    border: 2px solid #262626 !important;
+  }
+  #tabs a {
+    border: 1px solid transparent !important;
+  }
+  #tabs a.youarehere, .tabs a.youarehere, .tag-suggestions, .dropdown li,
+  .proposed-change .diff-buttons a:not(.selected), #logout-form, .snippet-holder,
+  .CodeMirror, .CodeMirror-gutters, .badge-progress.completed,
+  .timeline-item:before, .item-select-table .item, .title-box, .-list-item,
+  .bg-powder-050, .textarea-with-counter .-counter, .new-contributor-indicator,
+  .temp-popover, .google-login, .btn._google {
+    background-color: #191919 !important;
+    border-color: #444 !important;
+  }
+  /* RSS Feed - issue #87 */
+  body > pre:not(.prettyprint):not(.CodeMirror-line) {
+    background: #191919 !important;
+    color: #ddd;
+  }
+  #tabs a.youarehere, .tabs a.youarehere {
+    border-bottom-color: transparent !important;
+  }
+  .subtabs :not(.youarehere) {
+    border: 0 !important;
+  }
+  #user-about-me, .user-about-me, .mine .messages, .avatar-card, .tag-container,
+  .dropdown {
+    background: #191919 !important;
+    border: 0 !important;
+    color: #c1beba !important;
+  }
+  #chat .mine .messages, .salary-share {
+    background-color: #292929 !important;
+    border: 1px solid #444 !important;
+  }
+  #chat div.moderator {
+    color: #366fb3 !important;
+  }
+  .topbar-dialog, .share-tip, .messages, #tag-menu, #overlay-header,
+  .action-list .action-selected, .switcher-nudge-lightbox,
+  .user-rep-chart-summary-tooltip:hover, .current-site-container, #or,
+  .account-number, .topbar, .wmd-prompt-dialog, .wb-popup-content,
+  .wb-hat-details, .docs-review-page .history-table tr.even td, kbd, kbd code,
+  .switcher label, .timeline-item-actions, .cv-story .section-opener h2,
+  .cv-story .section-opener:after, .header-edit-section .ctas,
+  .item-select-table .item:hover, .visa-wrapper, .chosen-choices,
+  .p-top-tags .-tag-group, .chosen-results .active-result,
+  .salary-results-wrapper .inline-survey-cta, #messages-interface .callout,
+  .tour-bubble .-body, .why-jobs-v2 .developers-first select option, .s-tag {
+    background-color: #222 !important;
+    color: #ddd !important;
+  }
+  .profile-popup, .profile-popup tr, .profile-popup th, .profile-gravatar,
+  .newuser, .roomcard, .seWrapper, h2.index.header, .privilege-table-row:hover,
+  .list-originals .item.hover, .list-originals .body-summary,
+  .review-instructions-reason, .room-mini, #formContainer, #switch,
+  .login-topbar, .newsletter-category, .newsletter-item, .blogcontainer,
+  .usercard-xxl, .roomcard-xxl, .docs-review-page .topic-draft-bar,
+  .badge-progress, .avatar-wrapper, .timeline-line, .s-progress-bar .-bar,
+  .-job-badges .-badge, .search-form .job-alert-tooltip, .bg-white,
+  .s-sidebarwidget--header, .tag-popup .-container, .tag-popup .-arrow:before,
+  .l-main-col a.btn-secondary, .messaging-v2 .btn-secondary.is-active, .s-card,
+  .bar-sm.bg-black-025 {
+    background-color: #222 !important;
+    border-color: #555 !important;
+    color: #ddd !important;
+  }
+  #header #topbar, .revision-comment, .date-span, .form-submit input,
+  .preferred-login, .mdhelp, .wmd-help-button.active-help, .date_brick,
+  .more-info, .review-stats-current-user, .review-stats-count-current-user,
+  .topbar-menu-links, .input-group .-fill {
+    background: #222 !important;
+    color: #ddd !important;
+    -webkit-border-radius: 3px !important;
+            border-radius: 3px !important;
+  }
+  .topbar.newheader, .network-items>a, .icon-help, .icon-help:hover {
+    background-color: #222 !important;
+  }
+  .calendar, .calendar-small, .mspark .mspbar, #promo-box,
+  #input-area .input-hint, .tour-page .feature-selection li a.triggered,
+  .ob-docs,
+  .topbar.newheader .topbar-wrapper .topbar-links .search-container #search input[name="q"],
+  .mainbar.discussion .discussion-item, #input-area, .pager a span,
+  .page-sizer a, .s-sidebarwidget__yellow .s-sidebarwidget--header,
+  .s-sidebarwidget__yellow .s-sidebarwidget--content, .self {
+    background: #222 !important;
+    color: #ddd !important;
+  }
+  .tour-page .tour-content section:nth-child(n+1), .users-page .user-info:hover,
+  .nav-left-col a {
+    background: rgba(34, 34, 34, .5) !important;
+  }
+  .ad502-room, .message.message-config .actions, .tag-container .col, .congrats,
+  .task-stat-table tdm {
+    background-color: #232323 !important;
+    border: 1px solid #191919 !important;
+  }
+  .rep-recent-row, .bounty, .diff-choices a:hover, div.meter, .narrow .votes,
+  .ob-post-votes, .card, .congrats, .-card {
+    background-color: #232323 !important;
+    color: #bbb !important;
+  }
+  .answer, #system-message, .commentlist, .revision td, #hero-content,
+  .mdhelp-tabs .selected, .tabs .selected, .rep-card .rep-col, .sort select,
+  .-job._highlighted, .MathJax_MenuDisabled, .gsc-option-menu-item-highlighted,
+  .secondary-job-results-identifier {
+    background: #232323 !important;
+    color: #999 !important;
+  }
+  .container, .tour-page .headline, .tour-page .cta,
+  .s-progress-bar._badge .-fill {
+    background-image: none !important;
+  }
+  .tagged-interesting, .tagged-interesting .views, .highlight-row, .highlighted,
+  .card.rep-card .graph, .badge-progress:hover, #newsletter-ad,
+  .search-form .icon-advanced-search, .message.gray, .menu-popout li:hover,
+  .menu-popout .is-selected, #job-detail .-sticky-tabs, .nav-left-col a:hover,
+  .deleted-answer footer .user-info, .util-bar, .user-info {
+    background-color: #242424 !important;
+    background-image: none !important;
+  }
+  #newsletter-ad {
+    padding: 10px !important;
+  }
+  #newsletter-ad:before {
+    content: "Love this site?";
+    font-size: 18px !important;
+  }
+  .youarehere, .dropdown li.selected a, .dropdown li.selected a:hover,
+  .ob-docs .example-metric, .menu-popout, .version-row, .version-name, .post-tag,
+  .post-tag:visited, .switcher input[type="radio"]:checked+label,
+  .double-input .separator, .geo-tag, .MathJax_Menu, .MathJax_MenuLabel:focus,
+  .salary-calc-inputs, .question-container.unread, .comments-wrap {
+    background: #333 !important;
+    color: #ccc !important;
+  }
+  .nav li, .seNav, .topbar a.topbar-icon-on, .topbar a.topbar-icon-on:hover,
+  .owner, .nav a, .module li.current, .seCurrent, .community-bulletin,
+  .owner-revision td, .markdown-diff .skip, #footer .container,
+  .body-diffs .skip, .newsletter-anon, .tag-suggestions>div:hover,
+  .topbar-dialog .modal-content li:hover, .timestamp:hover+div.message .meta,
+  div.message:hover .meta, #side-menu ul li a:hover, .conversation-info,
+  .message.reply-parent, .message.reply-child,
+  .sidebar-element .list li .rep-and-badges, .congrats .actions,
+  .newsletters-toggle, .tag-suggestions>div:focus,
+  .current-site a.site-link:hover, #sub-navs>a:hover, #sub-navs .menu-item:hover,
+  .popup-close .-link:hover, .p-highlights .-reputation .-meta-rep,
+  .nav-left-col a.is-active,
+  .comment__highlight:not([style*="background-color"]),
+  ul.comments-list .comment__highlight .comment-text,
+  ul.comments-list .comment__highlight .comment-actions,
+  .l-main-col .btn-secondary:hover, .grid--cell.s-progress {
+    background-color: #333 !important;
+  }
+  .owner-answer, .question-status, .notification, #feed-ticker, #top-menu,
+  .vote-revision td, .topbar-dialog .unread-item, .privileges-wrapper .stroke,
+  .progress-bar .bar {
+    background: #404040 !important;
+  }
+  tr.comment:hover, .reply-parent, .timestamp, .usercard, .comment-help,
+  .answer-help-background, .mdhelp-tabs, .tabs li, .hi, .seNavLinks a:hover,
+  .seNavLinks a:focus, .itemBoxNew, .pagination a.current,
+  .pagination a.selected, .pagination a:hover, .wb-wearing, .impact-card hr,
+  .MathJax_MenuActive {
+    background-color: #444 !important;
+    color: #ddd !important;
+  }
+  .page-numbers.current {
+    background: #444 !important;
+  }
+  .comment__highlight:not([style*="background-color"]),
+  ul.comments-list .comment__highlight .comment-text,
+  ul.comments-list .comment__highlight .comment-actions {
+    background: rgba(102, 102, 102, .8) !important;
+  }
+  #chat .messages .mention {
+    background: #666 !important;
+  }
+  #post-text-container div span {
+    background: #c1beba !important;
+  }
+  .-logo img {
+    background: #fff !important;
+  }
+  .sidebar-element .list li .rep-and-badges:before {
+    background: linear-gradient(270deg, #333, rgba(51, 51, 51, 0));
+  }
+  /* === Brown(ish) === */
+  .new-post-activity, #new-answer-activity, .val-info, .highlight,
+  a.youarehere:before, .message.regular, .filter-dashboard-edit .floating-help,
+  .review-post-author-guidance, .bg-black-050 {
+    background-color: rgba(51, 34, 17, .4) !important;
+  }
+  pre .spaces, .message.message-warning {
+    background-color: #321 !important;
+    color: #eee !important;
+  }
+  .message.message-warning .message-tip-left-top:before {
+    border-top-color: #321 !important;
+  }
+  /* chat room buttons */
+  a.button {
+    background: #f67400 !important;
+    color: #eee !important;
+  }
+  /* === Green === */
+  .accepted-answer, .suggested-edit .inserted, .markdown-diff .inserted,
+  .rep-increase, .progress-bar .percent, .recommended, .vote.accepted,
+  .suggested-edit .inserted>div, .full-diff .inserted>div, .message.success,
+  .p-highlights .-rep-increase, .s-progress-bar .-fill, .answerBox.accepted,
+  .accepted-answer .user-info {
+    background: #232 !important;
+  }
+  span.diff-add {
+    background: #3f4e1d !important;
+    color: #92cc09 !important;
+  }
+  .topbar-dialog.achievements-dialog .rep-up, .-activity .-stat.answered {
+    color: #92cc09 !important;
+  }
+  .answered, .answer-votes, .answered .vote-count-post {
+    background: #232323 !important;
+    color: #27ae60 !important;
+  }
+  .user-show-new .user-rep .rep-amount .rep-up, .-stats.rep-up {
+    color: #27ae60 !important;
+    border-color: #27ae60 !important;
+  }
+  .answered-accepted, .answered-accepted strong, .rep-up.bounty-indicator-tab,
+  .user-rep-chart-summary-bar, .special-rep,
+  .s-progress__privilege .s-progress--bar {
+    background: #27ae60 !important;
+    color: #fff !important;
+  }
+  .answered strong, .user-show-new .user-rep-full .rep-up {
+    color: #27ae60 !important;
+  }
+  .vote-count-post [style="color:green"] {
+    color: #27ae60 !important;
+  }
+  /* === Red === */
+  .deleted-answer, .suggested-edit .deleted, .markdown-diff .deleted,
+  .suggested-edit .deleted>div, .full-diff .deleted>div,
+  .realtime-post-deleted-notification p, .message.incomplete, .message.error,
+  .deleted-answer .comments-wrap, .deleted-answer .user-info,
+  .deleted-answer .util-bar, .deleted-answer .comment {
+    background-color: #200 !important;
+  }
+  .post-timeline-v2 .post-timeline tr.deleted-event td,
+  .post-timeline-v2 .post-timeline tr.deleted-event-details td {
+    background-color: rgba(34, 0, 0, .4) !important;
+  }
+  /* Mobile */
+  .-summary .-votes, .deleted-answer .votes {
+    background-color: rgba(214, 217, 220, .2) !important;
+  }
+  span.diff-delete {
+    background-color: #400f00 !important;
+    color: #ff4a15 !important;
+  }
+  .summary a.moderator-tag {
+    background-color: #400 !important;
+  }
+  .summary a.moderator-tag:hover {
+    background-color: #600 !important;
+  }
+  .vote-count-post [style="color:maroon"] {
+    color: maroon !important;
+  }
+  /* === Transparent background === */
+  div.message .meta, .spaces, .comment, span.feed-icon, a.role-switch,
+  .nav.careers li, .nav.careers li:hover, .switcher-nudge-content p, #content,
+  #tabs a, .tabs a, #chat .username, #chat .messages, .tag-container,
+  .prettyprint code, .lv-info, .lv-stats-wrapper, .lv-stats-wrapper .number,
+  .container, .bottom-notice, #question-header, .question-form .form-item,
+  .post-menu>a:hover, #main-content, #mainbar, #mainbar-full, .mainbar-full,
+  #logout-page, #sidebar, .footerwrap, #footer-menu, .module,
+  #sidebar #newsletter-ad, #sidebar .ad-container,
+  #sidebar .everyonelovesstackoverflow, .mention,
+  .tag-suggestions>div .more-info, .user-tags .answer-votes, .expanded:hover,
+  .sidebar-accordion, .sidebar-accordion a:hover, .sidebar,
+  .sidebar *:not(.post-tag), .tag-filter-isany, .col-section.expanded,
+  .timeline-mine header, .timeline-sidebar header, .sidebar-profile.is-visible,
+  .cv-section, .cv-story .avatar-wrapper, .btn-clear, .header-edit-section,
+  .personal-statement, .link-text, .match-preferences .seniority-selector,
+  .field-with-bg, #tags .message.regular, #profile-side #side-menu a,
+  .sidebar-profile .-header, .sidebar-profile .-footer,
+  #popup-next-badge .-header, .popup-close .-link, .job-cover-image.-no-image,
+  #job-detail, .s-footer .-container, .p-top-tags .badge-tag,
+  .gsc-webResult.gsc-result, .gsc-imageResult, .gsc-cursor-page,
+  .gsc-cursor-current-page, .metaInfo .owner, #content > .subheader,
+  header.job-details--header, .site-footer--container,
+  .-activity .-stat.answered, .deleted-answer .comment-actions,
+  .min-ds-wizard .current, .input-group .-fill._clean,
+  .why-jobs-v2 .slanted-background:before, .msg-list .list-item,
+  .msg-list .list-item.is-read, .msg-list .list-item header,
+  .message-detail header, .grid--cell, .post-signature:not(.owner) .user-info,
+  .answers-subheader, .profile-top-tags .badge-tag, .msg-controls {
+    background-color: transparent !important;
+  }
+  #tabs a:hover, .tabs a:hover {
+    background-color: #191919 !important;
+    border: 1px solid #444 !important;
+    border-bottom-color: transparent !important;
+  }
+  .highcharts-container rect[fill="#FFFFFF"], rect[fill="rgb(255, 255, 255)"] {
+    fill: transparent !important;
+  }
+  .spoiler, .spoiler * {
+    color: transparent !important;
+  }
+  .spoiler:hover, .spoiler:hover * {
+    color: inherit !important;
+  }
+  /* === Dark border === */
+  .body-diffs table * {
+    border-color: #111 !important;
+  }
+  .temp-popover.temp-popover__bottom .temp-popover--arrow:after,
+  .temp-popover.temp-popover__bottom-left .temp-popover--arrow:after,
+  .temp-popover.temp-popover__bottom-right .temp-popover--arrow:after {
+    border-bottom-color: #191919 !important;
+  }
+  .s-progress-bar .-bar:before, .s-progress-bar .-bar:after {
+    border-top-color: #222 !important;
+    border-bottom-color: #222 !important;
+  }
+  .search-form .job-alert-tooltip:after {
+    border-top-color: #222 !important;
+  }
+  .welovestackoverflow, .question-summary, .subheader,
+  .company-module .-details strong:before, .bc-black-1 {
+    border-color: #333 !important;
+  }
+  .temp-popover.temp-popover__bottom .temp-popover--arrow:before,
+  .temp-popover.temp-popover__bottom-left .temp-popover--arrow:before,
+  .temp-popover.temp-popover__bottom-right .temp-popover--arrow:before {
+    border-bottom-color: #444 !important;
+  }
+  a.required-tag, .topbar-dialog.feature-notice-dialog:before,
+  .site-footer .-link._expandable:after, .bc-black-2,
+  .message.message-info .message-close, .bc-black-3 {
+    border-color: #555 !important;
+  }
+  .message .message-tip-top-right:before, .message .message-tip-top-left:before {
+    border-bottom-color: #191919 !important;
+  }
+  .search-form .filter-pane a._active, .search-form .filter-pane a:hover {
+    border-bottom-color: /*[[base-color]]*/ !important;
+  }
+  .left-arrow, .timeline-item:nth-child(odd):after {
+    border-right-color: rgba(119, 119, 119, .4) !important;
+  }
+  .previous-button:hover .left-arrow {
+    border-right-color: #c0c0c0 !important;
+  }
+  .right-arrow, .timeline-item:nth-child(even):after {
+    border-left-color: rgba(119, 119, 119, .4) !important;
+  }
+  .next-button:hover .right-arrow {
+    border-left-color: #c0c0c0 !important;
+  }
+  #input-area .input-hint:after {
+    border-left-color: #222 !important;
+  }
+  .s-progress-bar .-fill {
+    border-top: #444 1px solid !important;
+    border-bottom: #444 1px solid !important;
+  }
+  #sub-navs .youarehere {
+    border-top-color: /*[[base-color]]*/ !important;
+  }
+  .nav-left-col .is-active, .nav-links .youarehere .nav-links--link {
+    border-right-color: /*[[base-color]]*/ !important;
+  }
+  .s-sidebarwidget [aria-current="page"]:before {
+    border-left-color: /*[[base-color]]*/ !important;
+  }
+  /* === No/hide border === */
+  div.list > div {
+    border-right: 0 !important;
+  }
+  .module, .tabs a, div.message, .full-diff td, .wb-outer:not(.wb-selected),
+  .page-numbers.dots, .p-top-tags .badge-tag, .page-numbers.desc,
+  .intellitab:not(.selected) a, #sub-navs .menu-item .menu-switcher,
+  .input-group .-fill._clean, .nav-left-col a, .comment-actions .s-btn {
+    border-color: transparent !important;
+  }
+  .left-arrow, .right-arrow {
+    border-bottom-color: transparent !important;
+    border-top-color: transparent !important;
+  }
+  div.message:hover, .timestamp:hover + div.message {
+    visibility: inherit;
+    border: 1px dotted #333;
+  }
+  /* blue label count */
+  .bounty-indicator-tab, .hero.profile, .jobs-banner.-blue,
+  #reg-alert-modal:hover, .-popout .btn-secondary:hover, .search-btn,
+  .tags .jobs a, .btn-secondary, #job-board-save, .message.message-info {
+    background: #046 !important;
+    color: #ccc !important;
+    border: 1px solid #135 !important;
+  }
+  .hero-box, .filter-show-more {
+    background: #182030 !important;
+  }
+  .review-actions input, .btn, .chosen-choices .search-choice,
+  .topbar-dialog a.btn-secondary, .filter-dashboard, input[type=submit],
+  .bg-blue-500, .s-btn.s-btn__filled, .old-hero.z-base {
+    background: #182030 !important;
+    color: #ccc !important;
+    border: 1px solid #135 !important;
+  }
+  .review-actions input:hover, .btn:hover, .btn-secondary:hover,
+  #job-board-save:hover, .topbar-dialog a.btn-secondary:hover,
+  input[type=submit]:hover, .s-btn.s-btn__filled:hover, .old-hero._small._darken {
+    background: #273045 !important;
+  }
+  .s-hero {
+    background-image: url("https://cdn.sstatic.net/img/hero/pattern.svg"),
+           linear-gradient(to right, #121723 0, #182030 100%) !important;
+  }
+  .s-hero:after {
+    background: #182030 !important;
+  }
+  .message.message-info .message-tip-left-top:before {
+    border-top-color: #046 !important;
+  }
+  /* === Text Color === */
+  div, input, .accepted-answer .post-text, .accepted-answer .user-action-time,
+  #question-header a, .post-text, .user-info, .topbar-dialog .header h3,
+  .topbar-dialog .header h3 a, .topbar-dialog span,
+  .search-result .answered .vote-count-post strong, .votes-cast-stats th,
+  .subheader h1, .vote.accepted, .message.message-config h1,
+  .message.message-config h2, .message.message-config h3,
+  .message.message-config h4, .spoiler:hover, .company-module a:hover *,
+  .search-form .label, .search-form label, .list.companies p, #snpte-button-run,
+  .comment-link, .timeline .header h4, .-title, #profile-side #side-menu a:hover,
+  .-rep, .-total, .-list-item .-description, .message.message-error a,
+  .chosen-container .chosen-results li, .salary-calc-inputs span,
+  .salary-survey-dialog .header h3, .title-banner h1,
+  .salary-results-container h1, .topbar-dialog h4, .label-key > b, .heading,
+  .module h3, .badge-tag, .s-label, .-link__with-icon:hover .svg-icon,
+  .youarehere a, .youarehere .svg-icon, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3,
+  .h4, .h5, .h6, .tour-bubble p, .fc-dark {
+    color: #ddd !important;
+  }
+  /* patch for hint text of SurfingKeys browser extension */
+  #sk_hints div {
+    color: #000 !important;
+  }
+  /* placeholder */
+  ::-webkit-input-placeholder {
+    color: #ddd !important;
+  }
+  ::-moz-placeholder {
+    color: #ddd !important;
+  }
+  .user-details td, .content-page, h2:not([style]), h2 a, .profile-popup a:hover,
+  .module h4, .page-description, #openid_identifier, .form-item label,
+  .subheader h2, .nav-links a.nav-links--link:hover {
+    color: #c1beba !important;
+  }
+  .comment, #top-menu a, .subheader a, .reputation a, .reputation-score,
+  .relativetime.old, .votes-cast-stats td, .mini-counts span,
+  #chat .system-message, .card .rep, a.badge, a.badge-tag,
+  .user-card .user-stats .number, .user-card .user-card-name,
+  a.question-hyperlink:hover, a.answer-hyperlink:hover, .cv-story .time-frame,
+  .-list-item.is-completed .-description, .s-footer .-toc th, .event-count,
+  .post-timeline td, .post-timeline th, #side-menu ul .category,
+  .msg-select-all-label, .fc-light {
+    color: #ccc !important;
+  }
+  .ob-post-tag, .ob-user-tag, .deleted-answer .util-bar a, .nav-links--link,
+  .msg-list .msg-text, .fc-medium {
+    color: #999 !important;
+  }
+  .nav-links .youarehere .nav-links--link .svg-icon, .nav-links .fc-medium {
+    color: #666 !important;
+  }
+  .comment-up-off, .comment-flag, .comment-flag-off,
+  .profile-cards--graph .grid--cell {
+    color: #444 !important;
+  }
+  .user-show-new .user-rep .rep-amount .rep-up.special-rep,
+  .user-show-new .user-rep-full .accept-indicator-tab {
+    color: #000 !important;
+  }
+  .answered-accepted strong, .youarehere, .nav .primarynav li a, .nav a, a:hover,
+  .rep-up.special-rep, .pac-item-query, #content .salary-subheader,
+  .salary-skill-legend-li .-score, header.job-details--header a,
+  .msg-list .list-item.is-unread span {
+    color: #fff !important;
+  }
+  input, .actual-edit-overlay {
+    -webkit-text-fill-color: #fff !important;
+  }
+  .post-text a:visited, .comment-text a:not(.comment-user):visited,
+  #chat-body .content a:visited, .question-hyperlink:visited,
+  .answer-hyperlink:visited, #hot-network-questions ul a:visited {
+    color: /*[[visited-color]]*/ !important;
+  }
+  .rep-up {
+    color: #27ae60 !important;
+    filter: brightness(140%) !important;
+  }
+  .rep-down, .user-show-new .user-rep .rep-down {
+    color: #d65 !important;
+    filter: brightness(140%) !important;
+  }
+  .comment-flag-on, .comment-flag:hover, .flag-on {
+    color: #622 !important;
+  }
+  /* dark yellow */
+  .result-highlight {
+    color: #aa0 !important;
+  }
+  /* red */
+  .warm {
+    color: #da4453 !important;
+  }
+  #profile-summary>.-popout._incomplete {
+    border-color: #da4453 !important;
+  }
+  /* orange */
+  .hot, .fc-orange-400 .iconRss, .fc-orange-400.iconRss {
+    color: #f67400 !important;
+  }
+  /* light brown */
+  .unanswered {
+    color: #9a4444 !important;
+  }
+  /* === Style adjustments === */
+  .nav a, .post-tag, .comment-link, .tag-synonym-link, a.post-tag:hover,
+  .topbar a, .search-form .filter-pane a:hover, .comment-link:hover,
+  .tag-synonym-link:hover {
+    text-decoration: none !important;
+  }
+  .form-item {
+    padding-left: 20px !important;
+  }
+  .tag-container .col {
+    margin: 0 !important;
+    border: #333 1px solid !important;
+  }
+  .tag-container.row {
+    margin: 2px !important;
+  }
+  .stats {
+    margin-top: 5px !important;
+    margin-bottom: 4px !important;
+  }
+  #hsearch, .statscontainer {
+    margin-right: 5px !important;
+  }
+  .nav .primarynav li a, .list-originals .stats {
+    display: block !important;
+    float: left !important;
+  }
+  .nav-links--link .svg-icon {
+    fill: currentColor !important;
+  }
+  /* weird hack - see #123 */
+  @-webkit-keyframes autofill {
+    to {
+      background-color: #111 !important;
+      background-image: none;
+      color: #ddd !important;
+    }
+  }
+  input:-webkit-autofill, input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus, textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus,
+  select:-webkit-autofill, select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-animation-name: autofill !important;
+    -webkit-animation-fill-mode: both !important;
+  }
+  /* scroll bar */
+  ::-webkit-scrollbar {
+    max-width: 10px !important;
+    max-height: 10px !important;
+    background: #1d1d1d !important;
+  }
+  ::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
+    background: #1d1d1d !important;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(175, 175, 175, .5) !important;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(65, 131, 196, .8) !important;
+    background: rgba(/*[[base-color-rgb]]*/, .8) !important;
+  }
+  /* === badges === */
+  a.badge[title^="bronze"], a.badge-tag[title^="bronze"], .badge3 + .badgecount {
+    color: #c96 !important;
+  }
+  a.badge[title^="silver"], a.badge-tag[title^="silver"], .badge2 + .badgecount {
+    color: #c5c5c5 !important;
+  }
+  a.badge[title^="gold"], a.badge-tag[title^="gold"], .badge1 + .badgecount {
+    color: #ffcc46 !important;
+  }
+  .badge-tag, a.tag, .ob-post-tag, .ob-user-tag, .events-tooltip {
+    background-color: #191919 !important;
+    border-color: #111 !important;
+  }
+  .badge3-alternate, .progress-bar.badge-3 .bar .percent,
+  .s-progress-bar._badge._badge3 .-fill, .badge-wrapper._badge3,
+  .s-progress__bronze .s-progress--bar {
+    background-color: #7c4318 !important; /* bronze */
+  }
+  .badge2-alternate, .progress-bar.badge-2 .bar .percent,
+  .s-progress-bar._badge._badge2 .-fill, .badge-wrapper._badge2,
+  .s-progress__silver .s-progress--bar {
+    background-color: #464a4f !important; /* silver */
+  }
+  .badge1-alternate, .progress-bar.badge-1 .bar .percent,
+  .s-progress-bar._badge._badge1 .-fill, .badge-wrapper._badge1,
+  .s-progress__gold .s-progress--bar {
+    background-color: #957000 !important; /* gold */
+  }
+  /* === Images === */
+  .wmd-button>span {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyODMgNjAiIHdpZHRoPSIyODMiIGhlaWdodD0iNjAiPgogIDxnIGZpbGw9IiNjNmM2YzYiPgogICAgPHBhdGggZD0iTTEyOCAxNC40aDguNlYxNkgxMjh2LTEuNnptMC01LjNoOC42djJIMTI4Vjl6bTAtNWg4LjZ2MS43SDEyOFY0em0tMi42LTF2My42aC0xVjRoLS44VjNoMS44em0tMSA3djFoMS44djFoLTIuNnYtMmwxLjctMXYtLjdoLTEuN3YtLjhoMi42djJsLTEuNy43em0xLjggMi43VjE3aC0yLjZ2LTFoMS43di0uN2gtMS43di0xaDEuN3YtLjhoLTEuN3YtMWgyLjZ6bTc4LTUuM0wyMDkgMTJWOS4zYzEuMyAwIDQuNyAwIDQuNyAzLjcgMCAyLTEuMyAzLjYtMyA0IDIuNi0uNCA0LjgtMyA0LjgtNiAwLTUuNi01LjgtNS42LTYuNi01LjZWM2wtNC40IDQuNHptMzEgMEwyMzEgMTJWOS4zYy0xLjMgMC00LjcgMC00LjcgMy43IDAgMiAxLjUgMy42IDMuMyA0LTIuNy0uNC01LTMtNS02IDAtNS42IDYtNS42IDYuNy01LjZWM2w0LjMgNC40ek01Ny43IDRDNTYuMyAyLjcgNTQgMi43IDUzIDRsLTMgM2MtMS40IDEuMy0xLjQgMy40IDAgNC43IDAgMCAwIC4yLjMuM2wxLTFjMC0uMi0uMi0uMy0uMy0uNC0uNy0uNy0uNy0xLjggMC0yLjVsMy0zYy43LS41IDEuOC0uNSAyLjUgMCAuNyAxIC43IDIgMCAyLjdMNTUgOWMuMy42LjUgMS4yLjUgMS44bDItMkM1OSA3LjMgNTkgNS4yIDU3LjUgNHptLTQuNCA0LjNMNTMgOGwtMS4yIDFjMCAuMi4zLjMuNC40LjcuNy43IDEuOCAwIDIuNWwtMyAzYy0uNy41LTEuOC41LTIuNSAwLS43LTEtLjctMiAwLTIuN0w0OCAxMWMtLjItLjYtLjQtMS4yLS40LTEuOGwtMiAyYy0xLjQgMS40LTEuNCAzLjUgMCA0LjggMS4yIDEuMyAzLjMgMS4zIDQuNiAwbDMtM2MxLjItMS4yIDEuMi0zLjQgMC00Ljd6TTE0OSA0aDguNnYxLjdIMTQ5VjR6bTAgNWg4LjZ2MkgxNDlWOXptMCA1LjRoOC42djEuOEgxNDl2LTEuOHptLTUuNC05LjZjMC0xIC44LTEuOCAxLjgtMS44czEuOC44IDEuOCAxLjgtLjggMS44LTEuOCAxLjgtMS44LTEtMS44LTEuOHptMCA1LjJjMC0xIC44LTEuOCAxLjgtMS44czEuOC44IDEuOCAxLjgtLjggMS44LTEuOCAxLjgtMS44LS44LTEuOC0xLjh6bTAgNS4yYzAtMSAuOC0xLjggMS44LTEuOHMxLjguOCAxLjggMS44LS44IDEuOC0xLjggMS44LTEuOC0uOC0xLjgtMS44em0tNzgtNi43YzIgMCAzLjUgMS41IDMuNSAzLjVzLTEuMyAzLjUtMy4zIDMuNVM2MiAxNCA2MiAxMnYtLjVjMC0zLjggMy4yLTcgNy03djJjLTEuMiAwLTIuNS41LTMuNCAxLjVsLS41LjZoLjd6bTkgMGMyIDAgMy41IDEuNSAzLjUgMy41cy0xLjMgMy41LTMuMyAzLjVTNzEgMTQgNzEgMTJ2LS41YzAtMy44IDMuMy03IDctN3YyYy0xLjIgMC0yLjUuNS0zLjQgMS41bC0uNS42aC43ek0yNTAgM2MtMy44IDAtNyAzLTcgN3MzLjIgNyA3IDcgNy0zIDctNy0zLjItNy03LTd6bTEgMTEuNGgtMnYtMS44aDJ2MS44em0yLjUtNC40bC0yLjYgMS44aC0ydi0xbDIuNi0xLjd2LS43aC00LjRWNi41aDUuMmMuNSAwIDEgLjQgMSAxVjEwek0xMyA5LjZDMTMuNyA5IDE0IDggMTQgN2MwLTIuMi0xLjgtNC00LTRINXYxNGg2YzIuMiAwIDQtMS44IDQtNCAwLTEuNS0uOC0yLjctMi0zLjR6TTggNWgxLjZjMSAwIDEuNiAxIDEuNiAycy0uNyAyLTEuNiAySDhWNXptMi41IDEwSDh2LTRoMi41YzEgMCAxLjcgMSAxLjcgMnMtLjggMi0xLjcgMnptMjktMTJ2MWgtMmwtNSAxMmgydjFoLTd2LTFoMmw1LTEyaC0yVjNoN3ptNDcuMiA2LjJ2LTNjMC0uNS4yLTEgLjUtMS4yLjMtLjMuOC0uNCAxLS40VjNDODYuNiAzIDg1IDQuNCA4NSA2djIuNGMwIC40LS4zLjgtLjguOGgtLjh2MS42aC44Yy41IDAgLjguMy44LjhWMTRjMCAxLjYgMS41IDMgMy4zIDN2LTEuNmMtLjQgMC0uOC0uMi0xLS40LS40LS4zLS42LS43LS42LTF2LTMuMmMwLS40LS4zLS44LS44LS44LjIgMCAuNi0uMy42LS44eiIvPgogICAgPHBhdGggZD0iTTE2NSAxMmgxMHYyaC0xMHYtMnptLTMtM2gxNnYyaC0xNlY5em0wIDZoMTZ2MmgtMTZ2LTJ6IiBvcGFjaXR5PSIuNCIvPgogICAgPHBhdGggZD0iTTE2MiAzaDE2djJoLTE2em0zIDNoMTB2MmgtMTB6bTE4LjYgM2gyLjN2MmgtMi41em0zLjQgMGgyLjN2MkgxODd6Ii8+CiAgICA8cGF0aCBkPSJNMTg2LjYgMTJoMTB2MmgtMTB2LTJ6bS0zIDNoMTZ2MmgtMTZ2LTJ6bTAtMTJoMTZ2MmgtMTZ6bTMgM2gxMHYyaC0xMHoiIG9wYWNpdHk9Ii40Ii8+CiAgICA8cGF0aCBkPSJNMTkwLjQgOWgyLjN2MmgtMi4zem0zLjQgMGgyLjN2MmgtMnptMy40IDBoMi4zdjJoLTIuM3pNOTMuNiAxMC44djNjMCAuNS0uMiAxLS41IDEuMiAwIC4zLS41LjQtMSAuNFYxN2MyIDAgMy4zLTEuNCAzLjMtM3YtMi40YzAtLjQuMy0uOC44LS44aDFWOS4yaC0xYy0uNSAwLS44LS4zLS44LS44VjZjMC0xLjYtMS41LTMtMy4zLTN2MS42bDEgLjRjLjIuMy40LjcuNCAxdjMuMmMwIC40LjMuOC44LjgtLjMgMC0uNy4zLS43Ljh6TTExOC4yIDR2MTJoLTE1VjRoMTVtMS0xaC0xN3YxNGgxN1YzeiIvPgogICAgPHBhdGggZD0iTTExNCA2LjhjMC0xIC42LTEuNiAxLjUtMS42IDEgMCAxLjYuNyAxLjYgMS42cy0uNSAxLjYtMS40IDEuNmMtLjggMC0xLjYtLjctMS42LTEuNnptMyA4aC0xMi42bDMtOC42IDQuNCA1LjQgMi0xLjZNMjY4LjUgOS44bC0uOC0uOC0yLjcgMi41IDIuNyAyLjUuOC0uOC0xLjgtMS43bTMuNyAxLjdsLjguOCAyLjgtMi41LTIuOC0yLjUtLjguOCAxLjggMS43TTI3MS4zIDN2NC43aDQuNyIvPgogICAgPHBhdGggZD0iTTI3NSA2LjdWMTZoLTExVjRoOC4zbC0xLTFIMjY0Yy0uNiAwLTEgLjUtMSAxdjEyYzAgLjUuNCAxIDEgMWgxMWMuNSAwIDEtLjUgMS0xVjcuN2wtMS0xeiIvPgogIDwvZz4KICA8ZyBmaWxsPSIjZjkwIj4KICAgIDxwYXRoIGQ9Ik0xMjggNTQuNGg4LjZWNTZIMTI4em0wLTUuM2g4LjZ2MkgxMjh2LTJ6bTAtNWg4LjZ2MS43SDEyOFY0NHptLTIuNi0xdjMuNmgtMVY0NGgtLjh2LTFoMS44em0tMSA3djFoMS44djFoLTIuNnYtMmwxLjctMXYtLjdoLTEuN3YtLjhoMi42djJsLTEuNy43em0xLjggMi43VjU3aC0yLjZ2LTFoMS43di0uN2gtMS43di0xaDEuN3YtLjhoLTEuN3YtMWgyLjZ6bTc4LTUuM0wyMDkgNTJ2LTIuN2MxLjMgMCA0LjcgMCA0LjcgMy43IDAgMi0xLjMgMy42LTMgNCAyLjYtLjQgNC44LTMgNC44LTYgMC01LjYtNS44LTUuNi02LjYtNS42VjQzem0zMSAwTDIzMSA1MnYtMi43Yy0xLjMgMC00LjcgMC00LjcgMy43IDAgMiAxLjUgMy42IDMuMyA0LTIuNy0uNC01LTMtNS02IDAtNS42IDYtNS42IDYuNy01LjZWNDN6TTU3LjcgNDRjLTEuMy0xLjMtMy41LTEuMy00LjcgMGwtMyAzYy0xLjUgMS4zLTEuNSAzLjQgMCA0LjcgMCAwIDAgLjIuMi4zbDEtMWMwLS4yLS4yLS4zLS4zLS40LS44LS43LS44LTEuOCAwLTIuNWwzLTNjLjYtLjUgMS43LS41IDIuNCAwIC43IDEgLjcgMiAwIDIuN0w1NSA0OWMuMy42LjUgMS4yLjUgMS44bDItMmMxLjMtMS40IDEuMy0zLjUgMC00Ljh6bS00LjQgNC4zTDUzIDQ4bC0xLjIgMWMwIC4yLjMuMy40LjQuNy43LjcgMS44IDAgMi41bC0zIDNjLS43LjUtMS44LjUtMi41IDAtLjctMS0uNy0yIDAtMi43TDQ4IDUxYy0uMi0uNi0uNC0xLjItLjQtMS44bC0yIDJjLTEuNCAxLjQtMS40IDMuNSAwIDQuOCAxLjIgMS4zIDMuMyAxLjMgNC42IDBsMy0zYzEuMi0xLjIgMS4yLTMuNCAwLTQuN3pNMTQ5IDQ0aDguNnYxLjdIMTQ5em0wIDVoOC42djJIMTQ5em0wIDUuNGg4LjZ2MS44SDE0OXptLTUuNC05LjZjMC0xIC44LTEuOCAxLjgtMS44czEuOC44IDEuOCAxLjgtLjggMS44LTEuOCAxLjgtMS44LTEtMS44LTEuOHptMCA1LjJjMC0xIC44LTEuOCAxLjgtMS44czEuOC44IDEuOCAxLjgtLjggMS44LTEuOCAxLjgtMS44LS44LTEuOC0xLjh6bTAgNS4yYzAtMSAuOC0xLjggMS44LTEuOHMxLjguOCAxLjggMS44LS44IDEuOC0xLjggMS44LTEuOC0uOC0xLjgtMS44em0tNzgtNi43YzIgMCAzLjUgMS41IDMuNSAzLjVzLTEuMyAzLjUtMy4zIDMuNWMtMiAwLTMuNy0xLjUtMy43LTMuNXYtLjVjMC0zLjggMy4yLTcgNy03djJjLTEuMiAwLTIuNS41LTMuNCAxLjVsLS41LjZoLjd6bTkgMGMyIDAgMy41IDEuNSAzLjUgMy41cy0xLjMgMy41LTMuMyAzLjVjLTIgMC0zLjctMS41LTMuNy0zLjV2LS41YzAtMy44IDMuMy03IDctN3YyYy0xLjIgMC0yLjUuNS0zLjQgMS41bC0uNS42aC43ek0yNTAgNDNjLTMuOCAwLTcgMy03IDdzMy4yIDcgNyA3IDctMyA3LTctMy4yLTctNy03em0xIDExLjRoLTJ2LTEuOGgyem0yLjUtNC40bC0yLjYgMS44aC0ydi0xbDIuNi0xLjd2LS43aC00LjR2LTEuN2g1LjJjLjUgMCAxIC40IDEgMVY1MHpNMTMgNDkuNmMuNi0uNyAxLTEuNiAxLTIuNiAwLTIuMi0xLjgtNC00LTRINXYxNGg2YzIuMiAwIDQtMS44IDQtNCAwLTEuNS0uOC0yLjctMi0zLjR6TTggNDVoMS42YzEgMCAxLjYgMSAxLjYgMnMtLjcgMi0xLjYgMkg4em0yLjUgMTBIOHYtNGgyLjVjMSAwIDEuNyAxIDEuNyAycy0uOCAyLTEuNyAyem0yOS0xMnYxaC0ybC01IDEyaDJ2MWgtN3YtMWgybDUtMTJoLTJ2LTF6bTQ3LjIgNi4ydi0zYzAtLjUuMi0xIC41LTEuMmwxLS40VjQzYy0xLjcgMC0zLjIgMS40LTMuMiAzdjIuNGMwIC40LS4zLjgtLjguOGgtLjh2MS42aC44Yy41IDAgLjguMy44LjhWNTRjMCAxLjYgMS41IDMgMy4zIDN2LTEuNmMtLjQgMC0uOC0uMi0xLS40LS40LS4zLS42LS43LS42LTF2LTMuMmMwLS40LS4zLS44LS44LS44LjIgMCAuNi0uMy42LS44eiIvPgogICAgPHBhdGggZD0iTTE2NSA1MmgxMHYyaC0xMHptLTMtM2gxNnYyaC0xNnptMCA2aDE2djJoLTE2ek0xODYuNiA1MmgxMHYyaC0xMHptLTMgM2gxNnYyaC0xNnptMC0xMmgxNnYyaC0xNnptMyAzaDEwdjJoLTEweiIgb3BhY2l0eT0iLjQiLz4KICAgIDxwYXRoIGQ9Ik05My42IDUwLjh2M2MwIC41LS4yIDEtLjUgMS4yIDAgLjMtLjUuNC0xIC40VjU3YzIgMCAzLjMtMS40IDMuMy0zdi0yLjRjMC0uNC4zLS44LjgtLjhoMXYtMS42aC0xYy0uNSAwLS44LS4zLS44LS44VjQ2YzAtMS42LTEuNi0zLTMuMy0zdjEuNmwxIC40Yy4yLjMuNC43LjQgMXYzLjJjMCAuNC4zLjguOC44LS4zIDAtLjcuMy0uNy44em0yNC42LTYuOHYxMmgtMTVWNDRoMTVtMS0xaC0xN3YxNGgxN3oiLz4KICAgIDxwYXRoIGQ9Ik0xMTQgNDYuOGMwLTEgLjYtMS42IDEuNS0xLjYgMSAwIDEuNi43IDEuNiAxLjYgMCAxLS41IDEuNi0xLjQgMS42LS44IDAtMS42LS43LTEuNi0xLjZ6bTMgOGgtMTIuNmwzLTguNiA0LjQgNS40IDItMS42TTI2OC41IDQ5LjhsLS44LS44LTIuNyAyLjUgMi43IDIuNS44LS44LTEuOC0xLjdtMy43IDEuN2wuOC44IDIuOC0yLjUtMi44LTIuNS0uOC44IDEuOCAxLjdNMjcxLjMgNDN2NC43aDQuNyIvPgogICAgPHBhdGggZD0iTTI3NSA0Ni43VjU2aC0xMVY0NGg4LjNsLTEtMUgyNjRjLS42IDAtMSAuNS0xIDF2MTJjMCAuNS40IDEgMSAxaDExYy41IDAgMS0uNSAxLTF2LTguM3pNMTgzLjYgNDguOGgyLjN2MmgtMi41em0zLjQgMGgyLjN2MkgxODd6TTE5MC40IDQ4LjhoMi4zdjJoLTIuNHptMy40IDBoMi4zdjJIMTk0ek0xOTcuMiA0OC44aDIuM3YySDE5N3pNMTYyIDQzaDE2djJoLTE2em0zIDNoMTB2MmgtMTB6Ii8+CiAgPC9nPgo8L3N2Zz4=") !important;
+  }
+  #hlogo img, .everyonelovesstackoverflow, button[disabled], input[disabled],
+  a[disabled] {
+    opacity: .3 !important;
+  }
+  .everyonelovesstackoverflow:empty {
+    display: none !important;
+  }
+  #hlogo a, #footer-logo {
+    background-repeat: no-repeat !important;
+  }
+  #footer-logo {
+    background-size: contain !important;
+  }
+  #header-logo img, #footer-logo img {
+    visibility: hidden !important;
+  }
+  #sound, .vote-count-container.stars .img, #sub-navs>a:hover .messages-icon,
+  .industries:before, .js-reputation-graph, .js-reputation-graph *,
+  #sub-navs .messages-icon, .topbar-dialog .header .icon-close,
+  .menu-item span.settings-icon:hover {
+    -webkit-filter: invert(100%) !important;
+            filter: invert(100%) !important;
+  }
+  .collection img, .salary-survey-sidebar .header-img, #post-job .header-img {
+    filter: invert(80%) hue-rotate(180deg);
+  }
+  p img {
+    background: #fff !important;
+    opacity: /*[[img-opacity]]*/;
+    border: #fff 2px solid !important;
+  }
+  p img:hover {
+    opacity: 1 !important;
+  }
+  .axis .tick, .pie text {
+    fill: #ccc !important;
+  }
+  .axis line, .axis path {
+    stroke: #999 !important;
+  }
+  /*New navigation tabs*/
+  .intellitab a {
+    background: transparent !important;
+  }
+  .intellitab.selected a {
+    background-color: rgba(51, 51, 51, .5) !important;
+  }
+  .intellitab a.youarehere {
+    border-bottom-color: #242729 !important;
+  }
+  .intellitab .menu-switcher {
+    background-color: #333 !important;
+  }
+  .intellitab .menu-switcher:hover {
+    background-color: #222 !important;
+  }
+  .intellitab.dropdown-enabled:hover .menu-switcher,
+  .intellitab .dropdown a:hover,
+  .post-timeline-v2 .post-timeline tr.separator > td > div {
+    background-color: #444 !important;
+  }
+  .dropdown:before {
+            filter: invert(76%) !important;
+    -webkit-filter: invert(76%) !important;
+  }
+  /* documentation editing icons */
+  .docs-menu a {
+    -webkit-filter: brightness(200%) !important;
+            filter: brightness(200%) !important;
+  }
+  .docs-menu:hover a {
+    -webkit-filter: none !important;
+            filter: none !important;
+  }
+  /* override prettyprint bright border styles */
+  .prettyprint {
+    border-color: transparent !important;
+    color: #ddd !important;
+  }
+  /* style non-prettyprint code */
+  code, pre:not(.prettyprint):not(.CodeMirror-line) {
+    background: #333 !important;
+    color: #ddd !important;
+  }
+  .prettyprint code, .accepted-answer pre > code {
+    background: transparent !important;
+  }
+  /* accepted answer code blocks */
+  .accepted-answer a > code, .accepted-answer li > code,
+  .accepted-answer .post-text > p > code, .accepted-answer .youarehere,
+  .accepted-answer pre:not(.prettyprint) {
+    background: #202a20 !important;
+  }
+  /*[[syntax-theme]]*/
+  }
+/* These extra @-moz-document definitions will not be included in the "grunt user"
+* build because Chrome Stylish puts these extra definitions into separate sections
+* with separate regexp/domain definitions.
+* If the css below changes, it will have to be manually updated
+*/
+/* === StackExchange tweaks ===
+ _                 _
+| |_ _ _ _ ___ ___| |_ ___
+|  _| | | | -_| .'| '_|_ -|
+|_| |_____|___|__,|_,_|___|
+*/
+@-moz-document regexp("^https?://((?!(www|area51|gaming)).*\\.)?stackexchange.com.*") {
+  /* login screen StackExchange logo replacement */
+  .login-page .se-logo {
+    -moz-box-sizing: border-box !important;
+         box-sizing: border-box !important;
+    background: url("https://StylishThemes.github.io/StackOverflow-Dark/images/stackexchange-logo.svg") no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    width: 200px !important; /* Width of new image */
+    height: 48px !important; /* Height of new image */
+    padding-left: 200px !important; /* Equal to width of new image */
+  }
+  /* login button (input type=button")*/
+  .login-page input.fr {
+    background-color: /*[[base-color]]*/ !important;
+  }
+  /* remove content border */
+  #content {
+    border: 0 !important;
+  }
+  #sidebar #newsletter-ad, #sidebar .ad-container,
+  #sidebar .everyonelovesstackoverflow {
+    border-width: 2px !important;
+  }
+  /* start blog.stackexchange.com */
+  .cse .gsc-control-cse, .gsc-control-cse, div.pagination {
+    background-color: #181818 !important;
+  }
+  .sidebar p {
+    color: #ddd !important;
+  }
+  .job {
+    color: #888 !important;
+  }
+  .gsc-control-wrapper-cse {
+    padding-top: 10px !important;
+  }
+  /* hide google custom search placeholder */
+  .gsc-input input:not(.gse-input-focus) {
+    background-image: none !important;
+  }
+  .podcast-container {
+    -webkit-filter: invert(100%) !important;
+            filter: invert(100%) !important;
+  }
+  .filters-sidebar .filters ul li.current,
+  .filters-sidebar .filters ul li.current .filter-unread-count {
+    background: #182030 !important;
+  }
+  /* end blog.stackexchange.com */
+  /* chat.stackexchange.com */
+  .event-banner {
+    background-color: #222 !important;
+    border-color: #555 !important;
+  }
+  /* end chat.stackexchange.com */
+  /* http://stackexchange.com/newsletters/newsletter (see #36) */
+  .promotion-banner-container, .promotion-banner {
+    background: #222 !important;
+  }
+  table[style*="background-color"], table[style*="background-image"] {
+    background: transparent !important;
+    border: none !important;
+  }
+  table h2[style*="color: "][style*="!important"],
+  table a[style*="color: #000!important"]:not([href*="questions/tagged"]) {
+    /* can't use color here because they added an inline !important */
+    filter: invert(100%);
+  }
+  table tr, table td, table td p {
+    background: transparent !important;
+    color: #ddd !important;
+  }
+  table td a[href*="questions/tagged"] {
+    background: #222 !important;
+    color: #ddd !important;
+    border: none !important;
+    text-decoration: none !important;
+  }
+  table td hr {
+    border-style: solid !important;
+  }
+  footer .iconLogoSE path:first-child {
+    fill: #ededed !important;
+  }
+  div[class^="gv-"], table.gv-stats tr, table.gv-stats td {
+    color: initial !important;
+  }
+}
+@-moz-document regexp("^https?://((?!(academia|dba|electronics|meta|tex)).*\\.)?stackexchange.com.*") {
+  /* target sites to *NOT* hide the header background */
+  #header, #hmenus {
+    background-color: transparent !important;
+  }
+  #header {
+    background-image: none !important;
+  }
+}
+@-moz-document domain("tex.stackexchange.com") {
+  /* target sites that need an inverted header */
+  #header, #header > * {
+    -webkit-filter: invert(100%) !important;
+            filter: invert(100%) !important;
+  }
+}
+@-moz-document regexp("^https?://((academia|chess|english|meta|movies|salesforce|skeptics|judaism|ux)\\.)?stackexchange\\.com.*") {
+  /* target sites needing menu adjustments */
+  .nav.mainnavs li, .nav.askquestion li {
+    background-color: transparent !important;
+  }
+  .nav.mainnavs, .footerwrap {
+    background-image: none !important;
+  }
+  .nav.mainnavs li {
+    margin: 0 6px !important;
+  }
+  .nav.mainnavs li a, .nav.askquestion li a {
+    padding: 6px !important;
+    margin: 2px !important;
+    border-radius: 3px !important;
+  }
+}
+@-moz-document regexp("^https?://((android|photo|programmers|wordpress)\\.)?stackexchange\\.com.*") {
+  /* darken everything that uses sprite.svg (vote arrows, feed icons, etc) */
+  .envelope-on, .envelope-off, .vote-up-off, .vote-up-on, .vote-down-off,
+  .vote-down-on, .star-on, .star-off, .comment-up-off, .comment-up-on,
+  .comment-flag, .edited-yes, .feed-icon, .vote-accepted-off, .vote-accepted-on,
+  .vote-accepted-bounty, .badge-earned-check, .delete-tag, .expander-arrow-hide,
+  .expander-arrow-show, .expander-arrow-small-hide, .expander-arrow-small-show,
+  .anonymous-gravatar, .gp-share, .fb-share, .twitter-share,
+  #notify-container span.notify-close, .migrated.to, .migrated.from {
+    -webkit-filter: invert(100%) hue-rotate(180deg) brightness(1.1) !important;
+            filter: invert(100%) hue-rotate(180deg) brightness(1.1) !important;
+  }
+}
+@-moz-document regexp("^https?://((photo|security|wordpress)\\.)?stackexchange\\.com.*") {
+  /* nav manu text coloring only */
+  .nav li.youarehere a, .nav li a:hover {
+    background-color: transparent !important;
+    color: /*[[base-color]]*/ !important;
+  }
+}
+@-moz-document regexp("^https?://((android|apple|dba|drupal|gis|mathematica|photo|scifi|security|tex|wordpress)\\.)?stackexchange\\.com.*") {
+  /* hide top nav background on <li>, style is on <a> */
+  .nav li {
+    background-color: transparent !important;
+  }
+}
+@-moz-document regexp("^https?://((android|apple|dba|gamedev|movies|salesforce|scifi|security|tex|ux|webapps|webmasters)\\.)?stackexchange\\.com.*") {
+  /* darken vote off buttons */
+  .vote-up-off, .vote-down-off, .star-off {
+    -webkit-filter: brightness(.5) !important;
+            filter: brightness(.5) !important;
+  }
+}
+/*
+@-moz-document regexp("^https?://((?!(android|apple|dba|drupal|electronics|gamedev|gis|mathematica|programmers|salesforce|security|sharepoint|tex|unix|ux|webapps|webmasters|wordpress)).*\\.)?stackexchange.com.*") {
+/ * BETA SITES * /
+  div.nav ul li {
+    margin-right: 5px !important;
+  }
+  .nav a {
+    padding: 4px 6px !important;
+  }
+}
+*/
+/* === site specific (somewhat alphabetical order by (sub)domain) ===
+      _ _                          _ ___ _
+  ___|_| |_ ___    ___ ___ ___ ___|_|  _|_|___
+ |_ -| |  _| -_|  |_ -| . | -_|  _| |  _| |  _|
+ |___|_|_| |___|  |___|  _|___|___|_|_| |_|___|
+       |_|
+*/
+@-moz-document domain("stackoverflow.com") {
+  #hlogo a {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg") !important;
+  }
+  .-logo > .-img {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg") !important;
+    background-size: cover !important;
+    background-position: 0 0 !important;
+    background-repeat: no-repeat !important;
+  }
+}
+@-moz-document domain("api.stackexchange.com") {
+  .logo [fill="#0A0B09"] {
+    fill: #aaa !important;
+  }
+  .outside.content {
+    background-color: transparent !important;
+  }
+  .module.help a.youarehere:before {
+    background-color: /*[[base-color]]*/ !important;
+  }
+  #console .fetched-url, .filter-popup .filter-controls {
+    background-color: #111 !important;
+  }
+  .home-links-version-value, .permalink-popup, .filter-popup {
+    background-color: #222 !important;
+  }
+  .run-button, .load-access-token, #login-button, .filter-save {
+    background: #222 !important;
+    color: #ddd !important;
+    border: 1px solid #444 !important;
+  }
+  .run-button:hover, .load-access-token:hover, #login-button:hover,
+  .filter-save:hover {
+    background-color: #333 !important;
+  }
+}
+@-moz-document domain("chat.stackoverflow.com") {
+  /* chat.stackoverflow.com */
+  #hlogo a {
+    background-image: none !important;
+  }
+  #header-logo, #footer-logo {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/stackoverflow-logo.svg") !important;
+  }
+  #header-logo {
+    background-size: contain !important;
+  }
+}
+@-moz-document domain("askubuntu.com") {
+  #header {
+    background-image: none !important;
+  }
+  .narrow div.votes, .answered-accepted .mini-counts {
+    background-color: transparent !important;
+  }
+  #custom-header .nav-global, #custom-header .nav-global ul, .topbar {
+    background-color: #000 !important;
+  }
+  #custom-header .more.open, .topbar .profile-me:hover, .topbar a:hover,
+  .topbar-icon:hover, #hmenus, .nav li, .nav a {
+    background-color: #111 !important;
+  }
+  #custom-header .nav-global a {
+    border-top-color: transparent !important;
+  }
+  #custom-header .nav-global a.active {
+    color: #eee !important;
+    border-top-color: #eee !important;
+  }
+  .nav li.youarehere, .nav li:hover {
+    background-color: /*[[base-color]]*/ !important;
+  }
+}
+@-moz-document domain("dba.stackexchange.com") {
+  /* database administrators */
+  #hlogo a {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/database-admin-logo.svg") !important;
+  }
+  #header {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/database-admin-logo-lines.png") !important;
+  }
+}
+@-moz-document url-prefix("https://stackoverflow.com/documentation") {
+  /* documentation beta moved into Stackoverflow */
+  .examples .example:hover, .example.expanded, div.sidebar, .timestamp,
+  .syntax .syntax-html, #tabs a, .tabs a, .intellitab a {
+    background: transparent !important;
+  }
+  .doctag-cards .card-top, .proposal-cell, .button, .btn, .btn-clear, input,
+  .panel-empty, .version-line,
+  .container.example-expanded:not(.split-disabled) .split-pane-examples,
+  .vertical-option, .search-doctag-popdown {
+    background-color: #181818 !important;
+  }
+  .version-name, .version-row, .example-metric, .edit-summary,
+  .first-time-container, .current-draft, a.selected, .diff-choices a:hover,
+  .diff-type-controls a:hover, .doctag-cards .card-bottom, .proposal-details,
+  .bubble-message .left-pane, .bubble-message .right-pane,
+  .vertical-option:hover, .side-by-side-markdown .skip-row, .introduction-topic {
+    background-color: #222 !important;
+  }
+  .vertical-option:hover, .split-option:hover, .expand-all-examples:hover,
+  .collapse-all-examples:hover, .examples .example-expansion-chevron:hover,
+  .examples .example.collapsed:hover .example-expansion-chevron {
+    background-color: rgba(50, 50, 50, .6) !important;
+  }
+  input.request-topic-button, .search-doctag-popdown .section-items a:hover {
+    background-color: #333 !important;
+  }
+  .btn-outlined, .topic-title.change-modifies, .syntax.change-modifies,
+  .parameters.change-modifies, .remarks.change-modifies,
+  .remarks-subsection.change-modifies,
+  .split-disabled .example.expanded.change-modifies, .versions.change-modifies {
+    border-color: #484848 !important;
+  }
+  a.button, input[type="button"]:hover, button:hover, .button:hover, .btn:hover,
+  button:focus, .button:focus, .btn:focus, .btn-clear:hover {
+    background-color: /*[[base-color]]*/ !important;
+    color: #ddd !important;
+  }
+  .btn-outlined:hover {
+    border-color: /*[[base-color]]*/ !important;
+  }
+  .relativetime,
+  .edit-summary .edited-sections li:not(.example-list).section-being-edited {
+    color: #ddd !important;
+  }
+  .topic-request-vote-up .vote-arrow {
+    border-color: transparent transparent #fff !important;
+  }
+  /* score box hidden behind up vote arrow, why? */
+  .collapsed-example-score {
+    visibility: hidden !important;
+  }
+  .syntax .syntax-html li {
+    padding: 0 !important;
+  }
+  .syntax .syntax-html code {
+    padding: 10px 0 10px 10px !important;
+  }
+  /* add padding because footer is semi-transparent and has "position:relative" set */
+  .split-pane-examples {
+    padding-bottom: 520px !important;
+  }
+  /* blue */
+  .hero-box .blue, input[type="submit"].btn-secondary,
+  input[type="button"].btn-secondary, button.btn-secondary, .btn-secondary,
+  .privacy-switch-btn, .topic-request-vote-up, .message-info {
+    background: #182030 !important;
+  }
+  .message-tip-top-center:before {
+    border-bottom-color: #182030 !important;
+  }
+  /* brown */
+  .handling-improvement-request, .shared-draft, .topic-request, .pending-review,
+  .deleting-topic, .has-changed, .missing-example, .pending-proposed-change,
+  .undeleting-topic, .undeleting-example, .edit-notifications, .hero-box .btn,
+  .moved, .section-help {
+    background: rgba(51, 34, 17, .4) !important;
+    border-color: #542 !important;
+    color: #b74 !important;
+  }
+  .edit-notifications .view-proposed-change:hover,
+  .edit-notifications .view-latest-draft:hover,
+  .edit-notifications .accept-chat-invite:hover {
+    background-color: rgba(51, 34, 17, .8) !important;
+  }
+}
+@-moz-document domain("electronics.stackexchange.com") {
+  /* electrical engineering */
+  .nav li, .nav li a, .nav li a:hover, .nav li.youarehere a,
+  .answered-accepted .mini-counts {
+    background-color: transparent !important;
+  }
+}
+@-moz-document domain("english.stackexchange.com") {
+  /* english language & usage */
+  .post-signature.owner {
+    background-image: none !important;
+  }
+}
+@-moz-document domain("es.stackoverflow.com") {
+  /* es.stackoverflow.com (Spanish) */
+  .-logo .-img:not(._glyph) {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/es-stackoverflow-logo.svg") !important;
+    background-size: cover !important;
+    height: 50px !important;
+  }
+}
+@-moz-document domain("es.meta.stackoverflow.com") {
+  /* es.meta.stackoverflow.com (Spanish) */
+  .-logo .-img:not(._glyph) {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/es-meta-stackoverflow-logo.svg") !important;
+    background-size: cover !important;
+    height: 50px !important;
+  }
+}
+@-moz-document domain("graphicdesign.stackexchange.com") {
+  /* nav manu text coloring only */
+  .nav li, .nav li.youarehere a, .nav a, .nav a:hover, #footer .top-footer-links,
+  #footer #footer-sites, .narrow .votes, .narrow .mini-counts, .answered,
+  .answered-accepted {
+    background-color: transparent !important;
+    color: #ddd !important;
+  }
+  .nav li.youarehere a, .nav li a:hover {
+    color: /*[[base-color]]*/ !important;
+  }
+  .answered-accepted .mini-counts span {
+    color: #fff !important;
+  }
+  .about-page .new-about-content-page h2.about-title {
+    color: #888 !important;
+  }
+  body:before {
+    -webkit-filter: brightness(.3) !important;
+            filter: brightness(.3) !important;
+  }
+  .answered-accepted .mini-counts {
+    background-color: #27ae60 !important;
+    color: #ddd !important;
+  }
+  .answered .mini-counts span {
+    font-weight: bold !important;
+    color: #27ae60 !important;
+  }
+}
+@-moz-document domain("ja.stackoverflow.com") {
+  /* ja.stackoverflow.com (Japanese) */
+  .-logo .-img:not(._glyph) {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/ja-stackoverflow-logo.svg") !important;
+    background-size: contain !important;
+    height: 60px !important;
+  }
+}
+@-moz-document domain("ja.meta.stackoverflow.com") {
+  /* ja.meta.stackoverflow.com (Japanese) */
+  .-logo .-img:not(._glyph) {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/ja-meta-stackoverflow-logo.png") !important;
+    background-size: contain !important;
+    height: 60px !important;
+  }
+}
+@-moz-document domain("mathoverflow.net") {
+  /* mathoverflow.net */
+  #hlogo a {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/mathoverflow-logo.png") !important;
+  }
+}
+@-moz-document domain("meta.stackoverflow.com") {
+  /* meta.stackoverflow.com */
+  #hlogo a, .-logo > .-img {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/meta-stackoverflow-logo.svg") !important;
+  }
+  #sidebar .community-bulletin .bulletin-item-content a,
+  #sidebar .community-bulletin .bulletin-item-content a:hover {
+    color: /*[[base-color]]*/ !important;
+  }
+  #sidebar .community-bulletin .bulletin-item-content a:hover {
+    color: #fff !important;
+  }
+}
+@-moz-document url-prefix("https://meta.stackexchange.com") {
+  #hlogo a {
+    text-indent: -9999px !important;
+  }
+  #footer {
+    background-color: #182030 !important;
+    background-image: url("https://meta.stackexchange.com/content/Sites/stackexchangemeta/img/icon-cloud-footer.png?v=ac80a4525ace") !important;
+  }
+}
+@-moz-document domain("photo.stackexchange.com") {
+  #custom-content {
+    background-image: none !important;
+  }
+  .vote-count-post {
+    color: #777 !important;
+  }
+}
+@-moz-document domain("portuguese.meta.stackexchange.com"), domain("portuguese.stackexchange.com") {
+  #hlogo a {
+    text-indent: 0 !important;
+  }
+  .nav ul li {
+    margin-left: 5px !important;
+  }
+  .nav ul li a {
+    padding: 5px 10px !important;
+    margin: 0 !important;
+  }
+}
+@-moz-document domain("pt.stackoverflow.com") {
+  /* pt.stackoverflow.com (Portuguese) */
+  .-logo .-img:not(._glyph) {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/pt-stackoverflow-logo.svg") !important;
+    background-size: cover !important;
+    height: 60px !important;
+  }
+}
+@-moz-document domain("pt.meta.stackoverflow.com") {
+  /* pt.meta.stackoverflow.com (Portuguese) */
+  .-logo .-img:not(._glyph) {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/pt-meta-stackoverflow-logo.svg") !important;
+    background-size: contain !important;
+    height: 60px !important;
+  }
+}
+@-moz-document domain("raspberrypi.stackexchange.com"), domain("raspberrypi.meta.stackexchange.com") {
+  .nav li, .nav a {
+    background-color: transparent !important;
+    border: 0 !important;
+  }
+  .vote-up-off, .vote-down-off {
+    filter: brightness(.6) !important;
+  }
+  .container, .site-footer {
+    background-image: none !important;
+  }
+}
+@-moz-document domain("rpg.stackexchange.com") {
+  #content, #hmenus, #mainbar .subheader, .mainbar .subheader,
+  #footer .footerwrap {
+    background-image: none !important;
+  }
+  #hlogo {
+    left: 25px !important;
+  }
+  .nav li a {
+    margin: 0 !important;
+    padding: 10px 20px !important;
+  }
+  #nav-askquestion {
+    text-indent: 10px !important;
+  }
+  a[class*="vote-"]:hover {
+    background-color: transparent !important;
+  }
+}
+@-moz-document domain("ru.stackoverflow.com") {
+  /* ru.stackoverflow.com (Russian) */
+  .-logo .-img:not(._glyph) {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/ru-stackoverflow-logo.svg") !important;
+  }
+}
+@-moz-document domain("ru.meta.stackoverflow.com") {
+  /* meta.ru.stackoverflow.com (Russian) */
+  .-logo .-img:not(._glyph) {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/ru-meta-stackoverflow-logo.svg") !important;
+    background-size: contain !important;
+    height: 60px !important;
+  }
+}
+@-moz-document domain("salesforce.stackexchange.com") {
+  .star-on {
+    -webkit-filter: brightness(.9) !important;
+            filter: brightness(.9) !important;
+  }
+}
+@-moz-document domain("serverfault.com") {
+  /* serverfault.com */
+  #hlogo a {
+    background-size: cover !important;
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/serverfault-logo.svg") !important;
+  }
+  .container .answered, .container .answered-accepted {
+    border: 2px transparent !important;
+    padding: 5px 5px 6px !important;
+    height: 38px !important;
+  }
+}
+@-moz-document domain("skeptics.stackexchange.com") {
+  #hlogo a {
+    height: 60px !important;
+    background-size: contain !important;
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/skeptics-logo.svg") !important;
+  }
+  #hmenus .nav li a {
+    border: none !important;
+    margin-top: 40px !important;
+  }
+  #hmenus .nav ul li:before {
+    mix-blend-mode: initial !important;
+    color: #999 !important;
+    left: 3px !important;
+  }
+}
+@-moz-document domain("softwareengineering.stackexchange.com") {
+  /* softwareengineering.stackexchange.com specific tweaks *//* menu & section underline extensions (wrong color) */
+  #hmenus .nav ul li a, #hmenus .nav ul li a:hover {
+    /* display: none !important; */
+    border-bottom-color: #db2424 !important;
+  }
+  #header {
+    border-bottom-color: #2b2b2b !important;
+  }
+  .subheader:before, .subheader:after {
+    background: transparent !important;
+  }
+  /* target sites that don't need a menu background color */
+  .nav li, .nav a, .nav li.youarehere a, .nav a:hover {
+    background-color: transparent !important;
+  }
+  .vote-up-off:not(.vote-up-on), .vote-down-off:not(.vote-down-on),
+  .star-off:not(.star-on) {
+    background-color: transparent !important;
+    filter: invert(100%) !important;
+  }
+  a.vote-up-off:hover, a.vote-down-off:hover, a.vote-up-on:hover,
+  a.vote-down-on:hover {
+    background-color: transparent !important;
+    filter: brightness(200%) !important;
+  }
+}
+@-moz-document domain("stackapps.com") {
+  /* stackapps.com */
+  #hlogo a {
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/stackapps-logo.png") !important;
+    background-size: contain !important;
+  }
+}
+@-moz-document regexp("^https?://stackexchange\\.com.*") {
+  /* stackExchange.com */
+  header h1 {
+    height: 60px !important;
+    background-size: cover !important;
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/stackexchange-logo.svg") !important;
+  }
+}
+@-moz-document domain("superuser.com") {
+  #hlogo a {
+    height: 60px !important;
+    background-size: cover !important;
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/superuser-logo.svg") !important;
+  }
+}
+@-moz-document domain("meta.superuser.com") {
+  #hlogo a {
+    height: 60px !important;
+    background-size: contain !important;
+    background-image: url("https://StylishThemes.github.io/StackOverflow-Dark/images/meta-superuser-logo.svg") !important;
+  }
+}
+@-moz-document domain("travel.stackexchange.com") {
+  .container {
+    position: relative !important;
+  }
+  .container:after {
+    content: " ";
+    background: url("https://cdn.sstatic.net/Sites/travel/img/bg-map.png?v=78dabedcf17b") no-repeat center -34px !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 0 !important;
+    opacity: .1 !important;
+    pointer-events: none !important;
+  }
+  .nav li, .nav a, .narrow .status, #content {
+    background: transparent !important;
+  }
+  .nav a:hover, .nav li.youarehere a {
+    background: rgba(0, 0, 0, .3) !important;
+  }
+  .answered-accepted .mini-counts {
+    background-color: /*[[base-color]]*/  !important;
+  }
+}
+@-moz-document domain("wordpress.stackexchange.com") {
+  #hmenus {
+    border: none !important;
+  }
+  .module {
+    background-image: none !important;
+    border: 1px solid #333 !important;
+    border-width: 0 0 1px 0 !important;
+  }
+  /* override !important flag set in site css */
+  a.question-hyperlink {
+    color: /*[[base-color]]*/ !important;
+  }
+  a.question-hyperlink:hover {
+    color: #aaa !important;
+  }
+}
+@-moz-document domain("data.stackexchange.com") {
+  .cm-sql-word, .relativetime, .profiler-number, #query-options .options,
+  #query-options label {
+    color: #ccc !important;
+  }
+  #messagesTab, .querylist .views {
+    background: transparent !important;
+  }
+  #history li, #recaptcha_table, #query .right-group, #schema .heading,
+  #history .heading, .slick-header .slick-header-column,
+  .profiler-result .profiler-timings th {
+    border-color: #555 !important;
+    background: #111 !important;
+  }
+  #schema dl dd {
+    background: #181818 !important;
+  }
+  #schema .schema-table, nav.primary .site-selector-popup,
+  .profiler-results .profiler-popup, .slick-row.odd, #messagesTab:hover,
+  .profiler-results .profiler-controls,
+  .profiler-results .profiler-button:not(.profiler-button-active) {
+    background: #1d1d1d !important;
+    color: #ddd !important;
+  }
+  .error-message {
+    background: #320000 !important;
+    border-color: #430 !important;
+    color: #ddd !important;
+  }
+  .cm-sql-keyword {
+    color: #00a2ff !important;
+  }
+  .cm-s-default span.cm-sql-var, .cm-variable-2 {
+    color: #f53636 !important;
+  }
+  .cm-sql-type {
+    color: #a84eff !important;
+  }
+  .cm-sql-function {
+    color: #b571e2 !important;
+  }
+}
+a:not([class*="comment-"]), .profile-popup a, .seWrapper a, .gs-title b, .spoiler:hover a, .comment-up-on, .comment-up-off:hover {
+    color: #7A002F !important;
+}
+a.post-tag:hover, .bounty-indicator, .bounty-indicator-tab, .bounty-award, span.bounty-indicator-tab, #change-picture, .supernovabg, .hotbg, .nav li.youarehere a, .nav a:hover, a.button:hover, .edit-count, .pager a:hover span, .bounties-tab, #sidebar a[href*="/questions/ask"], #sidebar a[href*="/questions/ask"]:visited, .page-numbers:hover, .s-btn.s-btn__primary, .s-btn.s-btn__primary:focus, .top-bar .-secondary .-ctas .btn-topbar-primary, .top-bar .-secondary .-ctas .btn-topbar-primary:focus, .user-card-name .top-badge, .user-card-name .top-badge a {
+    background-color: #201220 !important;
+    border: 1px solid #7A002F !important;
+}
+#question-header a {
+    color: #9DACCC !important;
+}
+.youarehere, .dropdown li.selected a, .dropdown li.selected a:hover, .ob-docs .example-metric, .menu-popout, .version-row, .version-name, .post-tag, .post-tag:visited, .switcher input[type="radio"]:checked + label, .double-input .separator, .geo-tag, .MathJax_Menu, .MathJax_MenuLabel:focus, .salary-calc-inputs, .question-container.unread, .comments-wrap {
+    background-color: #201220 !important;
+    border: 1px solid #7A002F !important;
+}
+.answered-accepted, .answered-accepted strong, .rep-up.bounty-indicator-tab, .user-rep-chart-summary-bar, .special-rep, .s-progress__privilege .s-progress--bar {
+    background: #F29215 !important;
+    color: #66390f !important;
+}
+input[type="submit"]:not(.s-btn), input[type="button"]:not(.s-btn), button:not(.s-btn), .button, a.button, a.button:visited, .btn, .hero-box.double-panel .panel.white .btn {
+    background-color: #F29215 !important;
+    color: #333 !important;
+}
