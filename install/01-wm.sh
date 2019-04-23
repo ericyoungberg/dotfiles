@@ -55,7 +55,8 @@ rm -rf ~/i3-gaps_tmp
 apt-get install -y \
   compton \
   feh \
-  rofi
+  rofi \
+  xrandr 
 
 
 set +e;
