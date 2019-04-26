@@ -231,3 +231,5 @@ exec --no-startup-id urxvt -name wtf -e /usr/local/bin/wtf
 exec --no-startup-id urxvt -name htop -e /usr/bin/htop
 
 exec firefox
+
+bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle
