@@ -52,10 +52,10 @@ def link_files():
                       os.makedirs(destination_dir, exist_ok=True)
 
                   os.symlink(os.path.abspath(file_path), destination)
-                  print(u'\u2713' + " Linking {0}...".format(file_path[2:]))
+                  print(u'' + " Linking {0}...".format(file_path[2:]))
 
               else:
-                  print(u'\u2713' + " Already linked {0}...".format(file_path[2:]))
+                  print(u'' + " Already linked {0}...".format(file_path[2:]))
 
 
 def main():

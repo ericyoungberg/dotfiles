@@ -39,7 +39,7 @@ alias resnet="sudo systemctl restart network-manager"
 export TERM=xterm-256color
 export PS1="\\[\\e[1;36m\\][\\h] \\[\\033[01;32m\\]\\u\\[\\033[01;34m\\] \\W \$\\[\\033[00m\\] "
 
-xset r rate 160 25
+[[ -x "$(command -v xset)" ]] && xset r rate 160 25
 
 # shellcheck source=/dev/null
 [[ -s "$HOME/.screenlayout/layout" ]] && source "$HOME/.screenlayout/layout"
@@ -69,3 +69,14 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Add Yarn global binaries
 export PATH="$PATH:$HOME/.yarn/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# Execute any local machine configuration. 
+# Note: the .localrc file should never be committed, hence "local"
+
+# shellcheck source=/dev/null
+[[ -s "$HOME/.localrc" ]] && source "$HOME/.localrc"
