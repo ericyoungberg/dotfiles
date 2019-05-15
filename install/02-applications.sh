@@ -10,9 +10,12 @@ apt-get install -y \
   htop \
   nmap \
   ranger \
+  rxvt-unicode \
   shellcheck \
   silversearcher-ag \
+  thunar \
   tmux \
+  unclutter \
   vim 
 
 

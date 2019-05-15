@@ -12,10 +12,12 @@ apt-get update -qq \
 apt-get install -y \
   apt-transport-https \
   autoconf \
+  automake \
   build-essential \
   ca-certificates \
   curl \
   git \
+  libtool \
   software-properties-common \
   wget
 

@@ -23,8 +23,9 @@ apt-get install -y \
   libxcb-xkb-dev \
   libxkbcommon-dev \
   libxkbcommon-x11-dev \
-  xutils-dev \
-  libxcb-shape0-dev
+  libxcb-shape0-dev \
+  xutils-dev
+
 
 cd /tmp
 git clone https://github.com/Airblader/xcb-util-xrm
@@ -55,8 +56,12 @@ rm -rf ~/i3-gaps_tmp
 apt-get install -y \
   compton \
   feh \
+  i3status \
+  lxappearance \
+  libanyevent-i3-perl \
+  fonts-hack-ttf \
   rofi \
-  xrandr 
+  x11-xserver-utils # xrandr
 
 
 set +e;
