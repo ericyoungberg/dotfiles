@@ -56,10 +56,11 @@ rm -rf ~/i3-gaps_tmp
 apt-get install -y \
   compton \
   feh \
-  i3status \
-  lxappearance \
-  libanyevent-i3-perl \
   fonts-hack-ttf \
+  i3lock \
+  i3status \
+  libanyevent-i3-perl \
+  lxappearance \
   rofi \
   x11-xserver-utils # xrandr
 
