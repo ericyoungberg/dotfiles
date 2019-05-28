@@ -14,6 +14,8 @@ apt-get install -y \
   shellcheck \
   silversearcher-ag \
   thunar \
+  tumbler \
+  tumbler-plugins-extra \
   tmux \
   unclutter \
   vim 
