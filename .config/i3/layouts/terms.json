@@ -1,0 +1,109 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.423333333333333,
+    "type": "con",
+    "nodes": [
+        {
+            // splith split container with 1 children
+            "border": "pixel",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 340,
+                       "width": 564,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "htop",
+                    "percent": 1,
+                    "swallows": [
+                       {
+                        "class": "^URxvt$",
+                        "instance": "^htop$",
+                        "title": "^htop$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 340,
+               "width": 564,
+               "x": 0,
+               "y": 0
+            },
+            "name": "aux",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "class": "^URxvt$",
+                "instance": "^aux$",
+                "title": "^aux$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 826,
+       "width": 325,
+       "x": 1087,
+       "y": 86
+    },
+    "name": "Slack - Sasaki",
+    "percent": 0.423333333333333,
+    "swallows": [
+       {
+        "class": "^Slack$",
+        "instance": "^slack$",
+        "title": "^Slack\\ \\-\\ Sasaki$",
+        "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 340,
+       "width": 564,
+       "x": 0,
+       "y": 0
+    },
+    "name": "urxvt",
+    "percent": 0.153333333333333,
+    "swallows": [
+       {
+        "class": "^URxvt$",
+        "instance": "^wtf$",
+        "title": "^wtf$"
+       }
+    ],
+    "type": "con"
+}
+

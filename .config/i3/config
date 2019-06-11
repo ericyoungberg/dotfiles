@@ -74,7 +74,8 @@ set $workspace8 "8:Oort Cloud"
 set $workspace9 "9:ISM"
 set $workspace10 "10:Black Hole"
 
-exec --no-startup-id "i3-msg 'workspace 4:Terminals; append_layout ~/.config/i3/layouts/terminals.json'"
+exec --no-startup-id "i3-msg 'workspace 4:Terminals; append_layout ~/.config/i3/layouts/terms.json'"
+exec --no-startup-id "i3-msg 'workspace 2:Muxer'"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -88,11 +89,15 @@ bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
 
-workspace $workspace1 output DVI-I-1
-workspace $workspace2 output DVI-I-2-3
-workspace $workspace3 output DVI-I-1-2
-workspace $workspace4 output DVI-I-1
-workspace $workspace5 output DVI-I-1-2
+# assign workspaces to displays
+set $display1 DVI-D-0
+set $display2 DVI-I-1
+
+workspace $workspace1 output $display1
+workspace $workspace2 output $display1
+workspace $workspace3 output $display2
+workspace $workspace4 output $display2
+workspace $workspace5 output $display2
 
 
 # move focused container to workspace
@@ -231,6 +236,6 @@ exec --no-startup-id urxvt -name htop -e /usr/bin/htop
 
 exec firefox
 
-exec_always --no-startup-id sleep 10 && ~/.fehbg
+exec_always --no-startup-id ~/.fehbg
 
 bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle
