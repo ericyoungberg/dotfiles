@@ -7,6 +7,7 @@ CWD="$PWD"
 
 apt-get install -y \
   dict \
+  gpick \
   htop \
   nmap \
   ranger \
