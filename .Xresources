@@ -13,46 +13,42 @@ URxvt.font: xft:Hack:pixelsize=11:antialias=true
 URxvt.depth: 32
 URxvt.scrollBar: false
 
-! Color scheme
-#define c_white        #FFFFFF
-#define c_deep_purple  #72379b
-#define c_deep_pink    #AA005F
-#define c_east_purple  #9600FF
-#define c_east_blue    #00B8FF
-#define c_hot_pink     #FF00C1
-#define c_neon_purple  #E810E8
-#define c_neon_teal    #00FFF9
-#define c_orange       #f29215
-#define c_rich_brown   #66390f
-#define c_rich_orange  #F54F1E
-#define c_rich_purple  #240036
-#define c_soft_green   #2EF460
-#define c_in_purple    #4A07A6
-#define c_in_brown     #A66C1F
-#define c_metal_red    #F54F1E
-#define c_forest_green #1a541a
+! special
+*.foreground:   #0070ff
+*.background:   #000000
+*.cursorColor:  #0070ff
 
-#define t_background   [90]#201220
-#define t_foreground   c_orange
+! black
+*.color0:       #000000
+*.color8:       #264d80
 
-URxvt.background: t_background
-URxvt.foreground: t_foreground
+! red
+*.color1:       #264d80
+*.color9:       #264d80
 
-URxvt.color1: c_rich_orange
-URxvt.color2: c_rich_brown
-URxvt.color3: c_orange
-URxvt.color4: c_rich_orange
-URxvt.color5: c_hot_pink
-URxvt.color6: c_in_brown
-URxvt.color7: c_soft_green
-URxvt.color8: c_deep_pink
-URxvt.color9: c_soft_green
-URxvt.color10: c_orange
-URxvt.color11: c_in_brown
-URxvt.color12: c_in_brown
-URxvt.color13: c_in_brown
-URxvt.color14: c_rich_orange
-URxvt.color15: c_rich_orange
-URxvt.color16: c_rich_orange
+! green
+*.color2:       #336681
+*.color10:      #0070ff
+
+! yellow
+*.color3:       #336681
+*.color11:      #264d80
+
+! blue
+*.color4:       #264d80
+*.color12:      #4d9aff
+
+! magenta
+*.color5:       #0070ff
+*.color13:      #0070ff
+
+! cyan
+*.color6:       #003780
+*.color14:      #006eff
+
+! white
+*.color7:       #4d9aff
+*.color15:      #4d9aff
+
 
 ! vim: set ft=xdefaults:

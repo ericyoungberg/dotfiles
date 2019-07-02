@@ -113,11 +113,11 @@ document.addEventListener("DOMContentLoaded", function() {
    :root {
       /* Modify these to change your theme colors: */
       --primary: #61AFEF;
-      --text: #FF3D23;
+      --text: #0070ff;
     }
     div.c-message.c-message--light.c-message--hover
     {
-      color: #FF3D23 !important;
+      color: #0070ff !important;
     }
 
     span.c-message__body,
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function() {
     span.c-message_attachment__media_trigger.c-message_attachment__media_trigger--caption,
     div.p-message_pane__foreword__description span
     {
-        color: #FF3D23 !important;
+        color: #0070ff !important;
         font-family: Hack, Arial, Helvetica, sans-serif;
         text-rendering: optimizeLegibility;
         font-size: 14px;

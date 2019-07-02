@@ -32,6 +32,9 @@ alias tmuxr='tmux rename-session -t'
 # Settle network issues
 alias resnet="sudo systemctl restart network-manager"
 
+# AWS EC2 ssh
+alias sshk="ssh -i ~/Documents/keys/saskey.pem"
+
 
 # Settings
 # ===============================================
