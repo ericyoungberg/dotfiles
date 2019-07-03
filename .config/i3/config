@@ -66,15 +66,15 @@ bindsym $mod+space floating toggle
 bindsym $mod+Shift+space focus mode_toggle
 
 # Workspaces
-set $workspace1 "1:Desktop"
-set $workspace2 "2:Muxer"
-set $workspace3 "3:Viewer"
-set $workspace4 "4:Terminals"
-set $workspace5 "5:Atmosphere"
-set $workspace6 "6:Orbit"
-set $workspace7 "7:Kuiper Belt"
-set $workspace8 "8:Oort Cloud"
-set $workspace9 "9:ISM"
+set $workspace1 "1:Muxer"
+set $workspace2 "2:Viewer"
+set $workspace3 "3:Terminals"
+set $workspace4 "4:Atmosphere"
+set $workspace5 "5:Orbit"
+set $workspace6 "6:Kuiper Belt"
+set $workspace7 "7:Oort Cloud"
+set $workspace8 "8:ISM"
+set $workspace9 "9:Event Horizon"
 set $workspace10 "10:Black Hole"
 
 exec --no-startup-id "i3-msg 'workspace 4:Terminals; append_layout ~/.config/i3/layouts/terms.json'"
@@ -97,10 +97,9 @@ set $display1 DVI-D-0
 set $display2 DVI-I-1
 
 workspace $workspace1 output $display1
-workspace $workspace2 output $display1
+workspace $workspace2 output $display2
 workspace $workspace3 output $display2
 workspace $workspace4 output $display2
-workspace $workspace5 output $display2
 
 
 # move focused container to workspace
@@ -158,6 +157,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
+for_window [class=".*" floating] border pixel 1
+
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="bubble"] floating enable
 for_window [window_role="task_dialog"] floating enable
@@ -166,6 +167,7 @@ for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 for_window [title="Thunar"] floating enable
 for_window [title="Gpick"] floating enable
+
 
 
 ##
@@ -185,7 +187,7 @@ gaps outer $gaps
 gaps inner $gaps
 
 default_border pixel 0
-default_floating_border pixel 1
+
 client.focused $c_border_dark $c_border_dark $c_border_dark $c_border_dark $c_border_dark
 client.focused_inactive $c_border $c_border $c_border $c_border $c_border
 client.unfocused $c_border $c_border $c_border $c_border $c_border
