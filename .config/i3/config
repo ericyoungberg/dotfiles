@@ -77,8 +77,8 @@ set $workspace8 "8:ISM"
 set $workspace9 "9:Event Horizon"
 set $workspace10 "10:Black Hole"
 
-exec --no-startup-id "i3-msg 'workspace 4:Terminals; append_layout ~/.config/i3/layouts/terms.json'"
-exec --no-startup-id "i3-msg 'workspace 2:Muxer'"
+exec --no-startup-id "i3-msg 'workspace 3:Terminals; append_layout ~/.config/i3/layouts/terms.json'"
+exec --no-startup-id "i3-msg 'workspace 1:Muxer'"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -100,6 +100,7 @@ workspace $workspace1 output $display1
 workspace $workspace2 output $display2
 workspace $workspace3 output $display2
 workspace $workspace4 output $display2
+workspace $workspace5 output $display1
 
 
 # move focused container to workspace
@@ -223,12 +224,12 @@ bar {
 }
 
 # Applications
-assign [class="Firefox"] $workspace3
-assign [class="URxvt" instance="muxer"] $workspace2
-assign [class="URxvt" instance="wtf"] $workspace4
-assign [class="URxvt" instance="htop"] $workspace4
-assign [class="URxvt" instance="aux"] $workspace4
-assign [class="Slack"] $workspace4
+assign [class="Firefox"] $workspace2
+assign [class="URxvt" instance="muxer"] $workspace1
+assign [class="URxvt" instance="wtf"] $workspace3
+assign [class="URxvt" instance="htop"] $workspace3
+assign [class="URxvt" instance="aux"] $workspace3
+assign [class="Slack"] $workspace3
 
 exec --no-startup-id unclutter -grab
 exec --no-startup-id compton
