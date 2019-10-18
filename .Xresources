@@ -1,3 +1,7 @@
+! Enable meta keys (like Alt) in Xterm
+xterm*metaSendsEscape: true
+
+
 !-## URxvt 
 
 ! Settings

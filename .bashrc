@@ -61,7 +61,7 @@ export PATH=$PATH:/usr/local/sbin
 
 # Add Go to PATH
 export GOPATH=$HOME/go
-export GOROOT=/usr/lib/go
+export GOROOT=/usr/local/go
 export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
@@ -83,3 +83,13 @@ export NVM_DIR="$HOME/.nvm"
 
 # shellcheck source=/dev/null
 [[ -s "$HOME/.localrc" ]] && source "$HOME/.localrc"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[ -f /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/serverless.bash ] && . /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/serverless.bash
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[ -f /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/sls.bash ] && . /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/sls.bash
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[ -f /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/slss.bash ] && . /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/slss.bash

@@ -72,13 +72,12 @@
        "x": 1087,
        "y": 86
     },
-    "name": "Slack - Sasaki",
+    "name": "Slack",
     "percent": 0.423333333333333,
     "swallows": [
        {
         "class": "^Slack$",
         "instance": "^slack$",
-        "title": "^Slack\\ \\-\\ Sasaki$",
         "window_role": "^browser\\-window$"
        }
     ],
