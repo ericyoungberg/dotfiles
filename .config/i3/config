@@ -210,7 +210,6 @@ bar {
     tray_output eDP1
     tray_output LVDS-0
     tray_padding 0
-    height 18
     colors {
         statusline         $dark
         background         #000000
@@ -226,7 +225,6 @@ bar {
 # Applications
 assign [class="Firefox"] $workspace2
 assign [class="URxvt" instance="muxer"] $workspace1
-assign [class="URxvt" instance="wtf"] $workspace3
 assign [class="URxvt" instance="htop"] $workspace3
 assign [class="URxvt" instance="aux"] $workspace3
 assign [class="Slack"] $workspace3
@@ -238,11 +236,13 @@ exec --no-startup-id /usr/bin/slack
 
 exec --no-startup-id urxvt -name muxer
 exec --no-startup-id urxvt -name aux
-exec --no-startup-id urxvt -name wtf -e /usr/local/bin/wtf
 exec --no-startup-id urxvt -name htop -e /usr/bin/htop
 
 exec firefox
 
 exec_always --no-startup-id ~/.fehbg
+
+# Disable touchpad while typing
+exec syndaemon -i 0.5 -d -K
 
 bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle
