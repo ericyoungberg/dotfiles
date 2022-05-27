@@ -1,19 +1,19 @@
 rofi.color-enabled: true
 
 ! Window: ‘background’, ‘border’, ‘separator’
-rofi.color-window: argb:DD000000, #0070ff, #F54F1E
+rofi.color-window: argb:140008a0, #ff0099, #ff0099
 
 ! State: ‘bg’, ‘fg’, ‘altbg’, ‘hlbg’, hlfg
-rofi.color-normal: argb:000070ff, #0070ff, argb:00000000, argb:00000000, #FFFFFF
-rofi.color-active: argb:000070ff, #40a0ff, argb:00000000, argb:00000000, #00c0ff
+rofi.color-normal: argb:000070ff, #cc00ff, argb:00000000, argb:00000000, #FFFFFF
+rofi.color-active: argb:000070ff, #ff0099, argb:00000000, argb:00000000, #00c0ff
 rofi.color-urgent: argb:000070ff, #aaaaff, argb:00000000, argb:00000000, #aaaaff
 
 rofi.width: 25
 rofi.padding: 15
-rofi.line-margin: 1
-rofi.lines: 14
+rofi.line-margin: 0
+rofi.lines: 12
 rofi.columns: 1
-rofi.font: Hack 8
+rofi.font: Hack 9
 rofi.bw: 1
 rofi.eh: 1
 rofi.hide-scrollbar: true

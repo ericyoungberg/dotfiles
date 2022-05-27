@@ -18,41 +18,41 @@ URxvt.depth: 32
 URxvt.scrollBar: false
 
 ! special
-*.foreground:   #0070ff
-*.background:   #000000
-*.cursorColor:  #0070ff
+URxvt.foreground:   #cc00ff
+URxvt.background:   rgba:1400/0000/0800/b000
+URxvt.cursorColor:  #ff0099
 
 ! black
-*.color0:       #000000
-*.color8:       #264d80
+URxvt.color0:       #000000
+URxvt.color8:       #808080
 
 ! red
-*.color1:       #264d80
-*.color9:       #264d80
+URxvt.color1:       #00a258
+URxvt.color9:       #00a258
 
 ! green
-*.color2:       #336681
-*.color10:      #0070ff
+URxvt.color2:       #b123a5
+URxvt.color10:      #ba14e1
 
 ! yellow
-*.color3:       #336681
-*.color11:      #264d80
+URxvt.color3:       #ff0099
+URxvt.color11:      #ff0099
 
 ! blue
-*.color4:       #264d80
-*.color12:      #4d9aff
+URxvt.color4:       #0066ff
+URxvt.color12:      #0066ff
 
 ! magenta
-*.color5:       #0070ff
-*.color13:      #0070ff
+URxvt.color5:       #cc00ff
+URxvt.color13:      #cc00ff
 
 ! cyan
-*.color6:       #003780
-*.color14:      #006eff
+URxvt.color6:       #00a258
+URxvt.color14:      #00a258
 
 ! white
-*.color7:       #4d9aff
-*.color15:      #4d9aff
+URxvt.color7:       #666666
+URxvt.color15:      #006aff
 
 
 ! vim: set ft=xdefaults:

@@ -17,7 +17,6 @@
             "nodes": [
                 {
                     "border": "pixel",
-                    "current_border_width": 0,
                     "floating": "auto_off",
                     "geometry": {
                        "height": 340,
@@ -40,7 +39,6 @@
         },
         {
             "border": "pixel",
-            "current_border_width": 0,
             "floating": "auto_off",
             "geometry": {
                "height": 340,
@@ -64,7 +62,6 @@
 
 {
     "border": "pixel",
-    "current_border_width": 0,
     "floating": "auto_off",
     "geometry": {
        "height": 826,

@@ -133,23 +133,22 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 mode "resize" {
         # Vim Keys -> normal resize
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym j resize shrink width 20 px or 20 ppt
+        bindsym k resize grow height 20 px or 20 ppt
+        bindsym l resize shrink height 20 px or 20 ppt
+        bindsym semicolon resize grow width 20 px or 20 ppt
 
         # Arrow keys -> smaller resize
-        bindsym Left resize shrink width 2 px or 2 ppt
-        bindsym Down resize grow height 2 px or 2 ppt
-        bindsym Up resize shrink height 2 px or 2 ppt
-        bindsym Right resize grow width 2 px or 2 ppt
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
 
         # Shift+Arrow keys -> smallest resize
         bindsym Shift+Left resize shrink width 1 px or 1 ppt
         bindsym Shift+Down resize grow height 1 px or 1 ppt
         bindsym Shift+Up resize shrink height 1 px or 1 ppt
         bindsym Shift+Right resize grow width 1 px or 1 ppt
-
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -175,19 +174,19 @@ for_window [title="Gpick"] floating enable
 # Design
 ##
 
-set $c_border_dark #0070FF
-set $c_border      #003780
-set $transparent   #000000
+set $transparent   #00000000
+set $c_border_dark #ff0099
+set $c_border      #ff0099
 set $white         #FFFFFF
-set $light         #0070FF
+set $light         #ff0099
 set $dark          #264D80
 
-set $gaps 15
+set $gaps 20
 
 gaps outer $gaps
 gaps inner $gaps
 
-default_border pixel 0
+default_border pixel 1
 
 client.focused $c_border_dark $c_border_dark $c_border_dark $c_border_dark $c_border_dark
 client.focused_inactive $c_border $c_border $c_border $c_border $c_border
@@ -202,23 +201,23 @@ bar {
     status_command i3blocks
     i3bar_command i3bar -t
     position top
-    font pango:Hack 8
+    font pango:Hack 9
     strip_workspace_numbers yes
-    separator_symbol "■"
+    separator_symbol "■■"
     bindsym button4 nop
     bindsym button5 nop
     tray_output eDP1
     tray_output LVDS-0
     tray_padding 0
     colors {
-        statusline         $dark
-        background         #000000
-        separator          #000000
+        statusline         $light
+        background         $transparent
+        separator          $transparent
 
 #                          BORDER       BACKGROUND   TEXT
-        focused_workspace  $transparent $light       #000000
-        inactive_workspace $transparent #000000      $light
-        active_workspace   $transparent #000000      $light
+        focused_workspace  $transparent $light       $white
+        inactive_workspace $transparent $transparent $light
+        active_workspace   $transparent $transparent $light
     }
 }
 
