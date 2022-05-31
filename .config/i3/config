@@ -179,7 +179,7 @@ set $c_border_dark #ff0099
 set $c_border      #ff0099
 set $white         #FFFFFF
 set $light         #ff0099
-set $dark          #264D80
+set $dark          #cc00ff60
 
 set $gaps 20
 
@@ -215,7 +215,7 @@ bar {
         separator          $transparent
 
 #                          BORDER       BACKGROUND   TEXT
-        focused_workspace  $transparent $light       $white
+        focused_workspace  $transparent $dark       $white
         inactive_workspace $transparent $transparent $light
         active_workspace   $transparent $transparent $light
     }

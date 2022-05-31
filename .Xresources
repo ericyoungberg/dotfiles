@@ -19,7 +19,7 @@ URxvt.scrollBar: false
 
 ! special
 URxvt.foreground:   #cc00ff
-URxvt.background:   rgba:1400/0000/0800/b000
+URxvt.background:   rgba:1000/0000/0800/d000
 URxvt.cursorColor:  #ff0099
 
 ! black
