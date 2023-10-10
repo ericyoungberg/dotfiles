@@ -51,6 +51,10 @@ export PS1="\\[\\e[1;36m\\][\\h] \\[\\033[01;32m\\]\\u\\[\\033[01;34m\\] \\W \$\
 # Environments
 # ===============================================
 
+# Homebrew
+# shellcheck source=/dev/null 
+export PATH=/opt/homebrew/bin:$PATH
+
 # shellcheck source=/dev/null 
 source "$HOME/.git-completion.bash"
 
@@ -64,18 +68,8 @@ export GOPATH=$HOME/go
 export GOROOT=/usr/local/go
 export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-# shellcheck source=/dev/null
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 # Add Yarn global binaries
 export PATH="$PATH:$HOME/.yarn/bin"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Execute any local machine configuration. 
 # Note: the .localrc file should never be committed, hence "local"
