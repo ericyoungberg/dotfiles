@@ -86,3 +86,5 @@ export PATH="$PATH:$HOME/.yarn/bin"
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [ -f /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/slss.bash ] && . /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/slss.bash
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
