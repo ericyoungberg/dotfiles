@@ -23,6 +23,7 @@ alias lock='i3lock -c 000000 -f'
 # Git shortcuts
 alias scoop='git add -A && git status --short'
 alias grog='git log --oneline | head -5'
+alias branch='git branch --show-current'
 
 # Tmux shortcuts
 alias tmuxl='tmux list-sessions'
@@ -31,9 +32,6 @@ alias tmuxr='tmux rename-session -t'
 
 # Settle network issues
 alias resnet="sudo systemctl restart network-manager"
-
-# AWS EC2 ssh
-alias sshk="ssh -i ~/Documents/keys/saskey.pem"
 
 
 # Settings
@@ -73,18 +71,11 @@ export PATH="$PATH:$HOME/.yarn/bin"
 
 # Execute any local machine configuration. 
 # Note: the .localrc file should never be committed, hence "local"
-
 # shellcheck source=/dev/null
 [[ -s "$HOME/.localrc" ]] && source "$HOME/.localrc"
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[ -f /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/serverless.bash ] && . /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/serverless.bash
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[ -f /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/sls.bash ] && . /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/sls.bash
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[ -f /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/slss.bash ] && . /home/eyoungberg/.config/yarn/global/node_modules/tabtab/.completions/slss.bash
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+# Created by `pipx` on 2025-03-24 15:56:56
+export PATH="$PATH:/Users/ericyoungberg/.local/bin"
